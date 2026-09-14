@@ -14,7 +14,7 @@ plugins {
 }
 
 android {
-    namespace 'sangiorgi.wps.opensource'
+    namespace 'com.wpsa.tester'
     compileSdk = 36
 
     defaultConfig {

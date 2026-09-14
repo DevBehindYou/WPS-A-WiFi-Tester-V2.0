@@ -76,9 +76,9 @@ Locate `apksigner.bat` from Android SDK Build Tools (API 35+):
 & "$env:LOCALAPPDATA\Android\Sdk\build-tools\36.0.0\apksigner.bat" verify --verbose --print-certs "app/build/outputs/apk/open/release/app-open-release.apk"
 ```
 
-Expected output:
-- `apksigner` must exit successfully (exit code 0) and verbose output must confirm `Verifies`.
-- `Verified using v2 scheme (APK Signature Scheme v2): true`
+### Expected Verification Criteria
+- `apksigner` must exit successfully (exit code 0), and verbose verification must indicate that the APK verifies. Different Android Build Tools versions may format the output slightly differently.
+- Verification must confirm the active signing scheme (e.g. `Verified using v2 scheme (APK Signature Scheme v2): true` or `Verified using v3 scheme`).
 - `Signer #1 certificate DN: CN=DevBehindYou, OU=DevBehindYou, O=DevBehindYou, L=_, ST=_, C=_`
 - `Signer #1 certificate SHA-256 digest: eb628594f042128b1d257aab88a8cd13e227aed49eea72076cddce6cc04b39f6`
 

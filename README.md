@@ -33,7 +33,7 @@ Modern Android versions (Android 9 through Android 15) removed WPS user-facing o
 
 ## 3. System Requirements
 
-- **Operating System**: Android 9.0 (API 28) through Android 15 (API 35+)
+- **Operating System**: Android 7.0 (API 24) through Android 16 (API 36)
 - **Root Provider**: Magisk 25+, KernelSU, or APatch (required for supplicant socket interaction)
 - **Wi-Fi Hardware**: Wireless chipset and kernel driver supporting managed mode and WPS operations.
 

@@ -19,22 +19,22 @@
 -keep class com.topjohnwu.superuser.internal.** { *; }
 
 # Keep algorithm classes (reflection may be used for PIN generation)
--keep class sangiorgi.wps.opensource.algorithm.** { *; }
--keep class sangiorgi.wps.opensource.algorithm.strategy.** { *; }
--keep class sangiorgi.wps.opensource.algorithm.impl.** { *; }
+-keep class com.wpsa.tester.algorithm.** { *; }
+-keep class com.wpsa.tester.algorithm.strategy.** { *; }
+-keep class com.wpsa.tester.algorithm.impl.** { *; }
 
 # Keep connection models and callbacks
--keep class sangiorgi.wps.opensource.connection.models.** { *; }
--keep class sangiorgi.wps.opensource.connection.ConnectionUpdateCallback { *; }
+-keep class com.wpsa.tester.connection.models.** { *; }
+-keep class com.wpsa.tester.connection.ConnectionUpdateCallback { *; }
 
 # Keep domain models (Parcelable)
--keep class sangiorgi.wps.opensource.domain.models.** { *; }
+-keep class com.wpsa.tester.domain.models.** { *; }
 
 # Keep data models
--keep class sangiorgi.wps.opensource.data.models.** { *; }
+-keep class com.wpsa.tester.data.models.** { *; }
 
 # Keep BuildConfig
--keep class sangiorgi.wps.opensource.BuildConfig { *; }
+-keep class com.wpsa.tester.BuildConfig { *; }
 
 # Kotlin Coroutines
 -keepnames class kotlinx.coroutines.internal.MainDispatcherFactory {}
