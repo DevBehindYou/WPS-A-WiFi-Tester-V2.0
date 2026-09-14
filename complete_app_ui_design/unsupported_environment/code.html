@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Roboto+Flex:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#111417;color:#e1e2e8;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "text-muted": "#8e9199", "status-error": "#ef5350", "secondary-fixed-dim": "#a9c8fb", "surface-container-lowest": "#0b0e12", "surface-canvas": "#111318", "background": "#111417", "on-surface": "#e1e2e8", "secondary-fixed": "#d5e3ff", "tertiary": "#bbddff", "on-primary": "#003734", "on-primary-fixed-variant": "#00504b", "on-tertiary-fixed-variant": "#004b74", "primary-fixed": "#a4f0e9", "surface-container": "#1d2024", "on-tertiary-fixed": "#001d32", "surface-container-high": "#272a2e", "on-primary-container": "#005652", "on-tertiary-container": "#00517d", "on-primary-fixed": "#00201e", "on-error": "#690005", "outline-variant": "#3f4947", "on-secondary-fixed-variant": "#274773", "inverse-primary": "#136964", "outline-border": "#43474e", "tertiary-fixed-dim": "#94ccff", "tertiary-fixed": "#cde5ff", "on-surface-variant": "#bec9c7", "status-warning": "#ffb74d", "on-error-container": "#ffdad6", "surface-bright": "#36393e", "inverse-on-surface": "#2e3135", "surface-dim": "#111417", "surface-base": "#191c20", "surface-container-low": "#191c20", "primary": "#9ce7e0", "on-secondary-fixed": "#001c3b", "on-tertiary": "#003352", "surface-variant": "#323539", "surface-tint": "#89d4cd", "on-background": "#e1e2e8", "outline": "#889391", "surface-container-highest": "#323539", "primary-container": "#80cbc4", "primary-fixed-dim": "#89d4cd", "inverse-surface": "#e1e2e8", "on-secondary": "#0a315b", "error-container": "#93000a", "surface": "#111417", "error": "#ffb4ab", "secondary-container": "#274773", "on-secondary-container": "#98b7e9", "status-success": "#4caf50", "tertiary-container": "#7fc4ff", "secondary": "#a9c8fb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "1.5rem", "gutter-tablet": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-md": "0.75rem", "gutter": "1rem", "space-xs": "0.25rem", "margin-tablet": "1.5rem", "space-lg": "1rem" }, "fontFamily": { "title-md": ["Roboto Flex"], "code-sm": ["JetBrains Mono"], "body-lg": ["Roboto Flex"], "body-sm": ["Roboto Flex"], "label-lg": ["Roboto Flex"], "headline-lg": ["Roboto Flex"], "headline-md": ["Roboto Flex"], "label-md": ["JetBrains Mono"], "title-lg": ["Roboto Flex"], "body-md": ["Roboto Flex"], "headline-lg-mobile": ["Roboto Flex"] }, "fontSize": { "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "code-sm": ["11px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-6 px-margin flex items-center justify-between text-on-surface-variant font-label-md text-label-md select-none"><span class="tracking-tight">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Navigate back" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full text-on-surface hover:bg-surface-bright/40 active:bg-surface-bright transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Brand logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VNUHVLlCnjiChnNM46hj8_jFqi48x1GL5y8Th0D9BQNsXXHdJnoTbCIOae8EQZj9IwLTzL0gL8BYYeimlt1MOifUEbE_WrYA3em9unTT_6r90JwoYG-cbJPFsi0nQycBzs22ukxYel_hJTFPHxTuzGuMXsgN1qAjXg0F4Ff9FjyY-QuCBXw9i84LuvOkl_BJM9xowoJuWmkkPjZZRUdXhbLQNtP5NAuidX3Tfb70PykWVXMhesOf4Xdl22"/><div class="flex flex-col min-w-0"><span class="text-on-surface-variant font-code-sm text-code-sm uppercase tracking-wider truncate">WPS SUITE</span><h1 class="text-on-surface font-title-lg text-title-lg truncate leading-none">Environment State</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Context diagnostics" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-bright/30 transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">info</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface px-margin pb-12"><div class="flex flex-col w-full space-y-space-md">
+<!-- Hero Alert & Diagnostic Badge Section -->
+<div class="flex flex-col items-center text-center p-space-lg rounded-xl bg-surface-container shadow-md relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-status-warning/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-28 h-28 bg-status-error/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative mb-space-md">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[36px] text-status-warning" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<span class="absolute bottom-0 right-0 w-5 h-5 rounded-full bg-status-error flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px] text-on-error font-bold">close</span>
+</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-highest text-status-warning mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+<span class="font-label-md text-label-md tracking-wide uppercase">SUPPLICANT_SOCKET_UNAVAILABLE • §118</span>
+</div>
+<h2 class="text-on-surface font-headline-lg-mobile text-headline-lg-mobile mb-space-xs font-semibold">WPS Unavailable</h2>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-xs">
+      The current device environment does not expose the required supplicant functionality or raw 802.11 management sockets.
+    </p>
+</div>
+<!-- Technical Root Cause Analysis (§114, §118, §119) -->
+<div class="rounded-xl bg-surface-container p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+<h3 class="text-on-surface font-title-md text-title-md">Technical Analysis</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-text-muted font-code-sm text-code-sm">ARCH: MTK/API-34</span>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+      The app could not locate or bind to a compatible Wi-Fi supplicant control interface (<span class="font-code-sm text-code-sm text-secondary">/data/vendor/wifi/wpa/sockets/wlan0</span> or <span class="font-code-sm text-code-sm text-secondary">/dev/socket/wpa_wlan0</span>). On this device architecture (SoC: MediaTek / Android API 34+), vendor SELinux policies enforce strict <span class="text-status-warning font-mono">neverallow</span> userland socket domain restrictions, and no privileged fallback wrapper is installed.
+    </p>
+<!-- Detailed Status Badges / Hardware Telemetry -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-status-error text-[16px] shrink-0">cancel</span>
+<span class="font-code-sm text-code-sm text-on-surface truncate">wpa_cli binary</span>
+</div>
+<span class="font-label-md text-label-md text-status-error shrink-0 ml-2">NOT FOUND (/system|vendor)</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-status-warning text-[16px] shrink-0">gpp_maybe</span>
+<span class="font-code-sm text-code-sm text-on-surface truncate">Vendor Socket</span>
+</div>
+<span class="font-label-md text-label-md text-status-warning shrink-0 ml-2">EACCES 13 (DENIED)</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-text-muted text-[16px] shrink-0">link_off</span>
+<span class="font-code-sm text-code-sm text-on-surface truncate">Fallback Daemon</span>
+</div>
+<span class="font-label-md text-label-md text-text-muted shrink-0 ml-2">DISCONNECTED</span>
+</div>
+</div>
+</div>
+<!-- Operational Capability Matrix (§116, §117) -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Active Capabilities -->
+<div class="p-space-md rounded-xl bg-surface-container space-y-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs text-status-success">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-title-md text-title-md text-on-surface">Supported Capabilities</span>
+</div>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-success text-[16px] mt-0.5 shrink-0">check_circle</span>
+<span>Standard Wi-Fi scanning (SSID, BSSID, RSSI, Frequency)</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-success text-[16px] mt-0.5 shrink-0">check_circle</span>
+<span>Channel congestion &amp; overlap telemetry</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-success text-[16px] mt-0.5 shrink-0">check_circle</span>
+<span>Network capability element inspector</span>
+</li>
+</ul>
+</div>
+<!-- Disabled / Unavailable WPS Features -->
+<div class="p-space-md rounded-xl bg-surface-container space-y-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs text-status-error">
+<span class="material-symbols-outlined text-[18px]">do_not_disturb_on</span>
+<span class="font-title-md text-title-md text-on-surface">Unavailable Operations</span>
+</div>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-space-xs opacity-75">
+<span class="material-symbols-outlined text-status-error text-[16px] mt-0.5 shrink-0">cancel</span>
+<span>Push-Button (PBC) WPS hardware trigger</span>
+</li>
+<li class="flex items-start gap-space-xs opacity-75">
+<span class="material-symbols-outlined text-status-error text-[16px] mt-0.5 shrink-0">cancel</span>
+<span>PIN-based WPS state negotiation handshake</span>
+</li>
+<li class="flex items-start gap-space-xs opacity-75">
+<span class="material-symbols-outlined text-status-error text-[16px] mt-0.5 shrink-0">cancel</span>
+<span>Direct supplicant frame injection &amp; control sockets</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Actionable Remedies (§114) -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs px-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">build</span>
+<h3 class="text-on-surface font-title-md text-title-md">Recommended Resolutions</h3>
+</div>
+<div class="space-y-space-xs">
+<!-- Step 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex gap-space-md items-start shadow-sm">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5 font-bold">1</div>
+<div class="space-y-0.5 min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface">Verify Root Superuser Status</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ensure Magisk / KernelSU / APatch is active and granting root shell permissions with SU namespace set to global.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex gap-space-md items-start shadow-sm">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5 font-bold">2</div>
+<div class="space-y-0.5 min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface">Enable Supplicant Proxy Daemon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Install the privileged Magisk companion module to bridge vendor UNIX sockets into a sandbox-accessible pipe.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex gap-space-md items-start shadow-sm">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md shrink-0 mt-0.5 font-bold">3</div>
+<div class="space-y-0.5 min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface">Operate in Limited Diagnostic Mode</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continue using the application as a high-precision Wi-Fi analyzer without raw WPS frame generation.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary & Secondary Interactive Action CTAs (§46, §84, §116) -->
+<div class="pt-space-sm space-y-space-sm flex flex-col items-center">
+<button class="w-full h-12 px-space-lg rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs hover:opacity-90 active:scale-[0.99] transition-all shadow-sm" id="btn-diagnostics" type="button">
+<span class="material-symbols-outlined text-[20px]">troubleshoot</span>
+<span>Open System Diagnostics</span>
+</button>
+<button class="w-full h-12 px-space-lg rounded-xl bg-surface-container-high text-secondary font-label-lg text-label-lg font-medium flex items-center justify-center gap-space-xs hover:bg-surface-bright active:scale-[0.99] transition-all" id="btn-recheck" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform" id="recheck-icon">autorenew</span>
+<span>Re-check Environment</span>
+</button>
+<button class="min-h-[48px] px-space-md text-primary font-label-lg text-label-lg hover:underline flex items-center gap-space-xs transition-colors py-2" id="btn-continue" type="button">
+<span>Continue in Limited Scanner Mode</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<script>
+  (function() {
+    const recheckBtn = document.getElementById('btn-recheck');
+    const recheckIcon = document.getElementById('recheck-icon');
+    const diagBtn = document.getElementById('btn-diagnostics');
+    const continueBtn = document.getElementById('btn-continue');
+
+    if (recheckBtn && recheckIcon) {
+      recheckBtn.addEventListener('click', function() {
+        recheckIcon.classList.add('animate-spin');
+        recheckBtn.setAttribute('disabled', 'true');
+        setTimeout(function() {
+          recheckIcon.classList.remove('animate-spin');
+          recheckBtn.removeAttribute('disabled');
+        }, 1200);
+      });
+    }
+
+    if (diagBtn) {
+      diagBtn.addEventListener('click', function() {
+        console.info('[WPS-SUITE] Navigating to §47 System Diagnostics view.');
+      });
+    }
+
+    if (continueBtn) {
+      continueBtn.addEventListener('click', function() {
+        console.info('[WPS-SUITE] Navigating to Passive Scanner view in Safe Mode.');
+      });
+    }
+  })();
+</script></main><aside aria-label="Android System Navigation" class="fixed bottom-0 inset-x-0 z-50 pointer-events-none pb-safe"><div class="h-6 flex items-center justify-center"><div class="w-32 h-1 bg-on-surface/40 rounded-full"></div></div></aside></body></html>

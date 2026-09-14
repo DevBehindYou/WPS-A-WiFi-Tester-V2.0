@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Roboto+Flex:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#005652","on-background":"#e1e2e8","outline-variant":"#3f4947","surface-base":"#191c20","surface-container-highest":"#323539","on-surface-variant":"#bec9c7","inverse-surface":"#e1e2e8","surface-variant":"#323539","error-container":"#93000a","on-secondary-fixed":"#001c3b","tertiary-container":"#7fc4ff","tertiary-fixed":"#cde5ff","on-secondary-container":"#98b7e9","surface-bright":"#36393e","on-secondary":"#0a315b","secondary-container":"#274773","on-primary-fixed-variant":"#00504b","status-success":"#4caf50","secondary-fixed-dim":"#a9c8fb","primary-fixed":"#a4f0e9","on-tertiary-fixed-variant":"#004b74","surface-container-high":"#282c34","on-error":"#690005","background":"#111417","on-secondary-fixed-variant":"#274773","on-primary":"#003734","surface-dim":"#111417","inverse-on-surface":"#2e3135","on-surface":"#e1e2e8","outline":"#889391","on-tertiary":"#003352","surface":"#111417","outline-border":"#43474e","surface-container-lowest":"#0b0e12","surface-tint":"#89d4cd","surface-canvas":"#111318","error":"#ffb4ab","text-muted":"#8e9199","surface-container-low":"#191c20","primary-container":"#80cbc4","on-tertiary-fixed":"#001d32","status-warning":"#ffb74d","surface-container":"#1d2024","on-error-container":"#ffdad6","inverse-primary":"#136964","status-error":"#ef5350","secondary":"#a9c8fb","primary":"#9ce7e0","secondary-fixed":"#d5e3ff","primary-fixed-dim":"#89d4cd","on-primary-fixed":"#00201e","tertiary-fixed-dim":"#94ccff","tertiary":"#bbddff","on-tertiary-container":"#00517d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"1.5rem","gutter-tablet":"1.5rem","space-md":"0.75rem","space-sm":"0.5rem","margin":"1rem","gutter":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem","space-lg":"1rem"},"fontFamily":{"title-lg":["Roboto Flex"],"code-sm":["JetBrains Mono"],"label-lg":["Roboto Flex"],"body-lg":["Roboto Flex"],"headline-md":["Roboto Flex"],"headline-lg":["Roboto Flex"],"label-md":["JetBrains Mono"],"body-sm":["Roboto Flex"],"title-md":["Roboto Flex"],"body-md":["Roboto Flex"],"headline-lg-mobile":["Roboto Flex"]},"fontSize":{"title-lg":["20px",{"lineHeight":"28px","fontWeight":"500"}],"code-sm":["11px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe"><div class="flex items-center justify-between px-margin h-6 select-none text-on-surface-variant font-label-md text-label-md"><span class="tracking-tight font-medium">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0 flex-1"><span class="material-symbols-outlined text-primary text-[24px]">cell_tower</span><h1 class="font-title-lg text-title-lg text-on-surface font-medium truncate tracking-normal">Logs</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full px-margin space-y-space-md">
+<!-- Sub-header & Quick Action Controls -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-title-lg text-title-lg text-on-surface font-medium">Live System Logs</h2>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-md text-code-sm font-medium">
+          142 events
+        </span>
+</div>
+<!-- Auto Pulse Indicator -->
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container-lowest text-primary text-code-sm font-label-md">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+<span>DAEMON SYNC</span>
+</div>
+</div>
+<!-- Quick Actions Bar -->
+<div class="flex items-center justify-between gap-space-sm overflow-x-auto pb-1">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant active:scale-95 text-on-surface-variant hover:text-on-surface transition-all" id="clearLogsBtn">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+<span class="font-label-lg text-label-lg">Clear Logs</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high active:scale-95 text-secondary hover:text-on-surface transition-all" id="exportBtn" title="Export / Share Logs">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+<span class="font-label-lg text-label-lg">Export</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg active:scale-95 transition-all" id="autoscrollToggle">
+<span class="material-symbols-outlined text-[18px]">vertical_align_bottom</span>
+<span>Auto-scroll: ON</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Search and Query Console Filter -->
+<div class="relative w-full">
+<div class="flex items-center w-full rounded-xl bg-surface-container px-3 py-2 shadow-sm focus-within:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent border-none outline-none font-label-md text-code-sm text-on-surface placeholder:text-outline" id="logSearchInput" placeholder="Search logs (SSID, BSSID, PID, code)..." type="text"/>
+<button class="text-outline hover:text-on-surface flex items-center justify-center p-1" title="Clear search">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Filter Controls -->
+<div class="flex flex-col gap-space-sm">
+<!-- Component Picker Dropdown Button -->
+<div class="flex items-center justify-between">
+<div class="relative inline-block text-left">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-secondary font-label-md text-code-sm transition-colors" id="componentFilterBtn">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span id="activeComponentText">All Components</span>
+<span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-outline font-label-md text-code-sm">
+<span>Channel:</span>
+<span class="text-on-surface-variant font-medium">IPC / wpa_supplicant</span>
+</div>
+</div>
+<!-- Severity Horizontal Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5">
+<!-- All Chip (Active) -->
+<button class="severity-chip active shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-code-sm transition-all">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>All (142)</span>
+</button>
+<!-- Info Chip -->
+<button class="severity-chip shrink-0 flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-tertiary-fixed-dim hover:bg-surface-container-high font-label-md text-code-sm transition-all">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+<span>Info (118)</span>
+</button>
+<!-- Warning Chip -->
+<button class="severity-chip shrink-0 flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-status-warning hover:bg-surface-container-high font-label-md text-code-sm transition-all">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning"></span>
+<span>Warning (18)</span>
+</button>
+<!-- Error Chip -->
+<button class="severity-chip shrink-0 flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-error hover:bg-surface-container-high font-label-md text-code-sm transition-all">
+<span class="w-1.5 h-1.5 rounded-full bg-status-error"></span>
+<span>Error (6)</span>
+</button>
+<!-- Debug Chip -->
+<button class="severity-chip shrink-0 flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-outline opacity-60 font-label-md text-code-sm">
+<span>Debug (0)</span>
+</button>
+</div>
+</div>
+<!-- Realtime Log Entries Stream (LazyColumn layout style) -->
+<div class="flex flex-col gap-space-sm" id="logStreamContainer">
+<!-- ENTRY 1: INFO (Expandable) -->
+<div class="log-entry flex flex-col rounded-xl bg-surface-container-low overflow-hidden transition-all duration-200" data-component="WpsSession" data-severity="info">
+<div class="flex items-start justify-between p-3 cursor-pointer hover:bg-surface-container/60 transition-colors" onclick="toggleDetails(this)">
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<!-- Metadata Tag Row -->
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-code-sm text-text-muted tracking-tight">16:42:37.890</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-md text-code-sm">
+              INFO
+            </span>
+<span class="font-label-md text-code-sm text-primary-fixed-dim">WpsSession</span>
+</div>
+<!-- Message Body -->
+<p class="font-label-md text-code-sm text-on-surface leading-relaxed break-words">
+            WPS credential received. Starting WPA key exchange.
+          </p>
+</div>
+<button aria-label="Toggle details" class="shrink-0 p-1 text-outline hover:text-on-surface transition-transform">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+</div>
+<!-- Collapsible Detailed Meta Panel -->
+<div class="details-panel hidden px-3 pb-3 pt-1">
+<div class="rounded-lg bg-surface-container-lowest p-2.5 space-y-1 font-label-md text-code-sm text-text-muted">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-outline">Thread:</span>
+<span class="text-on-surface">DefaultDispatcher-worker-2</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-outline">Interface:</span>
+<span class="text-primary font-medium">wlan0</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-outline">State Transition:</span>
+<span>ASSOCIATED -&gt; HANDSHAKE_M1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ENTRY 2: WARNING (Expanded by default) -->
+<div class="log-entry flex flex-col rounded-xl bg-surface-container-low shadow-sm overflow-hidden" data-component="Supplicant" data-severity="warning">
+<div class="flex items-start justify-between p-3 cursor-pointer hover:bg-surface-container/60 transition-colors" onclick="toggleDetails(this)">
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<!-- Metadata Tag Row -->
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-code-sm text-text-muted tracking-tight">16:42:35.210</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-status-warning/20 text-status-warning font-label-md text-code-sm">
+              WARNING
+            </span>
+<span class="font-label-md text-code-sm text-secondary">Supplicant</span>
+</div>
+<!-- Message Body -->
+<p class="font-label-md text-code-sm text-on-surface leading-relaxed break-words">
+            Vendor control socket <span class="text-status-warning">/data/vendor/wifi/wpa/sockets/wlan0</span> returned errno 13 (Permission Denied). Falling back to direct CLI bridge.
+          </p>
+</div>
+<button aria-label="Toggle details" class="shrink-0 p-1 text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px] transform rotate-180 transition-transform duration-200">expand_more</span>
+</button>
+</div>
+<!-- Expanded Details Section -->
+<div class="details-panel block px-3 pb-3 pt-0">
+<div class="rounded-lg bg-surface-container-lowest p-3 space-y-2 font-label-md text-code-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-outline">Process:</span>
+<span class="text-on-surface font-medium">wpa_cli (PID 18420)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-outline">Exit code:</span>
+<span class="text-status-success font-medium">0 (Fallback engaged)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-outline">SELinux Context:</span>
+<span class="text-text-muted">u:r:su:s0</span>
+</div>
+<!-- Direct Diagnostic Action Button -->
+<div class="pt-2 flex justify-end">
+<button class="inline-flex items-center gap-1 px-3 py-1 rounded bg-surface-container-high hover:bg-surface-bright text-primary text-code-sm active:scale-95 transition-all" onclick="copyDiagRow(this)">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy Diagnostic Row</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ENTRY 3: INFO -->
+<div class="log-entry flex flex-col rounded-xl bg-surface-container-low overflow-hidden transition-all duration-200" data-component="WifiScanner" data-severity="info">
+<div class="flex items-start justify-between p-3 cursor-pointer hover:bg-surface-container/60 transition-colors" onclick="toggleDetails(this)">
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<!-- Metadata Tag Row -->
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-code-sm text-text-muted tracking-tight">16:42:31.148</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-md text-code-sm">
+              INFO
+            </span>
+<span class="font-label-md text-code-sm text-primary-fixed-dim">WifiScanner</span>
+</div>
+<!-- Message Body -->
+<p class="font-label-md text-code-sm text-on-surface leading-relaxed break-words">
+            Scan completed successfully. Discovered 12 access points (4 WPS-enabled).
+          </p>
+</div>
+<button aria-label="Toggle details" class="shrink-0 p-1 text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+</div>
+<!-- Collapsible Detailed Meta Panel -->
+<div class="details-panel hidden px-3 pb-3 pt-1">
+<div class="rounded-lg bg-surface-container-lowest p-2.5 space-y-1 font-label-md text-code-sm text-text-muted">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-outline">Scan Mode:</span>
+<span class="text-on-surface">Dual-band Passive / 2.4 + 5GHz</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-outline">Elapsed Time:</span>
+<span class="text-on-surface">1,248 ms</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ENTRY 4: INFO -->
+<div class="log-entry flex flex-col rounded-xl bg-surface-container-low overflow-hidden transition-all duration-200" data-component="RootManager" data-severity="info">
+<div class="flex items-start justify-between p-3 cursor-pointer hover:bg-surface-container/60 transition-colors" onclick="toggleDetails(this)">
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<!-- Metadata Tag Row -->
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-code-sm text-text-muted tracking-tight">16:42:28.004</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-md text-code-sm">
+              INFO
+            </span>
+<span class="font-label-md text-code-sm text-secondary-fixed">RootManager</span>
+</div>
+<!-- Message Body -->
+<p class="font-label-md text-code-sm text-on-surface leading-relaxed break-words">
+            Root access verified via Magisk su binary. Shell latency 14ms.
+          </p>
+</div>
+<button aria-label="Toggle details" class="shrink-0 p-1 text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+</div>
+<!-- Collapsible Detailed Meta Panel -->
+<div class="details-panel hidden px-3 pb-3 pt-1">
+<div class="rounded-lg bg-surface-container-lowest p-2.5 space-y-1 font-label-md text-code-sm text-text-muted">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-outline">Binary Path:</span>
+<span class="text-on-surface">/system/bin/su</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-outline">Root Mode:</span>
+<span class="text-status-success font-medium">Standalone Interactive Pipe</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ENTRY 5: ERROR -->
+<div class="log-entry flex flex-col rounded-xl bg-surface-container-low overflow-hidden transition-all duration-200" data-component="Supplicant" data-severity="error">
+<div class="flex items-start justify-between p-3 cursor-pointer hover:bg-surface-container/60 transition-colors" onclick="toggleDetails(this)">
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<!-- Metadata Tag Row -->
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-md text-code-sm text-text-muted tracking-tight">16:41:50.812</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-error-container/40 text-error font-label-md text-code-sm">
+              ERROR
+            </span>
+<span class="font-label-md text-code-sm text-secondary">Supplicant</span>
+</div>
+<!-- Message Body -->
+<p class="font-label-md text-code-sm text-error leading-relaxed break-words">
+            Direct socket ioctl SIOCGIWNAME failed on p2p0 (Interface not found or asleep).
+          </p>
+</div>
+<button aria-label="Toggle details" class="shrink-0 p-1 text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+</div>
+<!-- Collapsible Detailed Meta Panel -->
+<div class="details-panel hidden px-3 pb-3 pt-1">
+<div class="rounded-lg bg-surface-container-lowest p-2.5 space-y-1.5 font-label-md text-code-sm text-text-muted">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-outline">Kernel Errno:</span>
+<span class="text-error font-medium">ENODEV (19)</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-outline">Recovery Action:</span>
+<span class="text-on-surface">Ignored on secondary interface wlan-p2p</span>
+</div>
+<div class="pt-1 flex justify-end">
+<button class="inline-flex items-center gap-1 px-3 py-1 rounded bg-surface-container-high hover:bg-surface-bright text-primary text-code-sm active:scale-95 transition-all" onclick="copyDiagRow(this)">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy Trace</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Terminal State & Packet Footer -->
+<div class="rounded-xl bg-surface-container-lowest p-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">terminal</span>
+<span class="font-label-md text-code-sm text-outline">Buffer: <span class="text-on-surface font-medium">142/2000</span> lines</span>
+</div>
+<div class="flex items-center gap-1 font-label-md text-code-sm text-outline">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+<span>STDOUT Live</span>
+</div>
+</div>
+</div>
+<script>
+  function toggleDetails(element) {
+    const parent = element.closest('.log-entry');
+    const panel = parent.querySelector('.details-panel');
+    const arrow = element.querySelector('.material-symbols-outlined');
+    
+    if (panel.classList.contains('hidden')) {
+      panel.classList.remove('hidden');
+      panel.classList.add('block');
+      arrow.classList.add('rotate-180');
+    } else {
+      panel.classList.remove('block');
+      panel.classList.add('hidden');
+      arrow.classList.remove('rotate-180');
+    }
+  }
+
+  function copyDiagRow(btn) {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[14px]">check</span><span>Copied!</span>`;
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+    }, 1600);
+  }
+
+  // Quick action toggles
+  document.getElementById('autoscrollToggle')?.addEventListener('click', function() {
+    const isOff = this.classList.contains('bg-surface-container');
+    if (isOff) {
+      this.classList.remove('bg-surface-container', 'text-on-surface');
+      this.classList.add('bg-primary-container', 'text-on-primary-container');
+      this.innerHTML = `<span class="material-symbols-outlined text-[18px]">vertical_align_bottom</span><span>Auto-scroll: ON</span>`;
+    } else {
+      this.classList.add('bg-surface-container', 'text-on-surface');
+      this.classList.remove('bg-primary-container', 'text-on-primary-container');
+      this.innerHTML = `<span class="material-symbols-outlined text-[18px]">pause</span><span>Auto-scroll: PAUSED</span>`;
+    }
+  });
+
+  // Filter selection interaction
+  document.querySelectorAll('.severity-chip').forEach(chip => {
+    chip.addEventListener('click', function() {
+      document.querySelectorAll('.severity-chip').forEach(c => {
+        c.classList.remove('bg-primary-container', 'text-on-primary-container');
+        if (!c.classList.contains('bg-surface-container')) {
+          c.classList.add('bg-surface-container');
+        }
+      });
+      this.classList.remove('bg-surface-container');
+      this.classList.add('bg-primary-container', 'text-on-primary-container');
+    });
+  });
+
+  // Component dropdown toggle simulation
+  const componentOptions = ['All Components', 'WifiScanner', 'RootManager', 'SupplicantEngine', 'WpsSession'];
+  let compIdx = 0;
+  document.getElementById('componentFilterBtn')?.addEventListener('click', function() {
+    compIdx = (compIdx + 1) % componentOptions.length;
+    document.getElementById('activeComponentText').innerText = componentOptions[compIdx];
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]" data-active-classes="[&amp;_.nav-pill]:bg-primary-container [&amp;_.nav-pill]:text-on-primary-container [&amp;_.nav-icon]:text-on-primary-container [&amp;_.nav-label]:text-on-surface [&amp;_.nav-label]:font-medium"><div class="flex items-center justify-around h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">radar</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="diagnostics" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">troubleshoot</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Diagnostics</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors [&amp;_.nav-pill]:bg-primary-container [&amp;_.nav-pill]:text-on-primary-container [&amp;_.nav-icon]:text-on-primary-container [&amp;_.nav-label]:text-on-surface [&amp;_.nav-label]:font-medium" data-path="logs" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">terminal</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Logs</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">settings</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Settings</span></a></div></nav></body></html>

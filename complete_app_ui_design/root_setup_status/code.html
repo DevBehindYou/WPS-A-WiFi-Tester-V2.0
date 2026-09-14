@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Roboto+Flex:opsz,wght@8..144,400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#001d32", "surface-variant": "#323539", "on-secondary": "#0a315b", "on-primary-container": "#005652", "status-error": "#ef5350", "on-error": "#690005", "secondary-fixed": "#d5e3ff", "surface-container-low": "#191c20", "on-primary": "#003734", "on-tertiary": "#003352", "on-secondary-fixed-variant": "#274773", "on-background": "#e1e2e8", "error-container": "#93000a", "surface-container-lowest": "#0b0e12", "tertiary": "#bbddff", "status-warning": "#ffb74d", "on-secondary-container": "#98b7e9", "tertiary-container": "#7fc4ff", "inverse-on-surface": "#2e3135", "on-surface-variant": "#bec9c7", "surface-bright": "#36393e", "secondary-container": "#274773", "surface-dim": "#111417", "surface-container-highest": "#323539", "error": "#ffb4ab", "primary-fixed": "#a4f0e9", "outline-variant": "#3f4947", "secondary": "#a9c8fb", "tertiary-fixed": "#cde5ff", "on-surface": "#e1e2e8", "secondary-fixed-dim": "#a9c8fb", "surface-base": "#191c20", "text-muted": "#8e9199", "surface-container": "#1d2024", "on-primary-fixed": "#00201e", "on-primary-fixed-variant": "#00504b", "primary": "#9ce7e0", "surface-container-high": "#272a2e", "outline": "#889391", "on-tertiary-fixed-variant": "#004b74", "inverse-primary": "#136964", "background": "#111417", "on-secondary-fixed": "#001c3b", "surface": "#111417", "primary-fixed-dim": "#89d4cd", "on-error-container": "#ffdad6", "status-success": "#4caf50", "tertiary-fixed-dim": "#94ccff", "inverse-surface": "#e1e2e8", "surface-tint": "#89d4cd", "on-tertiary-container": "#00517d", "surface-canvas": "#111318", "outline-border": "#43474e", "primary-container": "#80cbc4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "gutter-tablet": "1.5rem", "margin-tablet": "1.5rem", "space-lg": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": ["Roboto Flex"], "code-sm": ["JetBrains Mono"], "body-lg": ["Roboto Flex"], "body-md": ["Roboto Flex"], "title-md": ["Roboto Flex"], "label-lg": ["Roboto Flex"], "headline-lg-mobile": ["Roboto Flex"], "label-md": ["JetBrains Mono"], "title-lg": ["Roboto Flex"], "headline-md": ["Roboto Flex"], "headline-lg": ["Roboto Flex"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "code-sm": ["11px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen relative selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col w-full"><div class="h-6 px-margin flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm pt-1"><span class="font-medium text-on-surface tracking-tight">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[14px]">network_cell</span><span class="material-symbols-outlined text-[14px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Navigate back" class="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest/50 transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #80cbc4
+- Font: robotoFlex
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VNUHVLlCnjiChnNM46hj8_jFqi48x1GL5y8Th0D9BQNsXXHdJnoTbCIOae8EQZj9IwLTzL0gL8BYYeimlt1MOifUEbE_WrYA3em9unTT_6r90JwoYG-cbJPFsi0nQycBzs22ukxYel_hJTFPHxTuzGuMXsgN1qAjXg0F4Ff9FjyY-QuCBXw9i84LuvOkl_BJM9xowoJuWmkkPjZZRUdXhbLQNtP5NAuidX3Tfb70PykWVXMhesOf4Xdl22"/><h1 class="font-title-lg text-title-lg text-on-surface truncate">Root Access</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Close modal" class="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest/50 transition-colors"><span class="material-symbols-outlined text-[22px]">close</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex flex-col relative w-full pt-[88px] pb-10 bg-surface flex-1 px-margin"><div class="flex flex-col w-full pb-8">
+<!-- Visual Hero / Atmospheric Image -->
+<div class="relative w-full h-36 rounded-xl overflow-hidden mb-space-lg shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up dark aesthetic shot of a high-tech internal telecom server motherboard with subtle teal circuits, fiber optic reflections, deep slate graphite textures, and microchip diagnostics, representing mission critical system operations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN9gP4N8cxzXPd23wVUWB0MjTyaI_hGDxLUTkmW9x1TrXO3PJXp2k4pz60Pkzt0tRQ8nuYsJpmtArTlXU6BTDfR5lppzTvaTmdP7twXJ9UKEBO1-hTlYxZNB1gSqxFbSU-frXoLgq3F4l4vVN_GOIarUk8w6ZUfIWg-hrT1A2hdLEd6MsyBPiU3o467JCG2iUswfVhnOaOed6W0oAJ-mfSYwbrRlVXVwJFVjSqMs19Z-i9LJwXqucBXg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/70 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="flex items-center gap-space-xs bg-surface-container-highest/90 backdrop-blur-md px-2.5 py-1 rounded-full text-on-surface">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+<span class="font-code-sm text-code-sm font-medium tracking-tight">SECURE SOC KERNEL 6.1.43</span>
+</div>
+<span class="bg-surface-variant/80 text-on-surface-variant font-code-sm text-code-sm px-2 py-0.5 rounded">ENV-CHECK v2.4</span>
+</div>
+</div>
+<!-- Stage Pill & Subtitle Block -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md tracking-wide">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+        Stage 2 of 2 • Environment Setup
+      </span>
+<span class="font-code-sm text-code-sm text-text-muted">UID #0 POOL</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mt-1">Root Access</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Advanced WPS functionality requires root privileges because modern Android sandboxing blocks raw 802.11 management frames and low-level supplicant sockets from userland applications.
+    </p>
+</div>
+<!-- State Simulator Tabs (Micro-interaction for Reviewing §12 & §116 / §117) -->
+<div class="flex items-center gap-space-xs p-1 bg-surface-container-lowest rounded-lg mb-space-md overflow-x-auto">
+<button class="px-3 py-1.5 rounded text-left transition-colors font-label-md text-label-md bg-surface-container-highest text-primary font-medium flex items-center gap-1.5 whitespace-nowrap" id="btn-tab-granted" onclick="switchState('granted')">
+<span class="material-symbols-outlined text-[15px] text-status-success">verified_user</span>
+      Verified (Magisk)
+    </button>
+<button class="px-3 py-1.5 rounded text-left transition-colors font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap" id="btn-tab-checking" onclick="switchState('checking')">
+<span class="material-symbols-outlined text-[15px] text-primary">sync</span>
+      Checking...
+    </button>
+<button class="px-3 py-1.5 rounded text-left transition-colors font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap" id="btn-tab-denied" onclick="switchState('denied')">
+<span class="material-symbols-outlined text-[15px] text-status-warning">gpp_maybe</span>
+      Denied (§116)
+    </button>
+<button class="px-3 py-1.5 rounded text-left transition-colors font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap" id="btn-tab-unavailable" onclick="switchState('unavailable')">
+<span class="material-symbols-outlined text-[15px] text-status-error">block</span>
+      Unavailable (§117)
+    </button>
+</div>
+<!-- Dynamic Inspection Card Area (§12, §49) -->
+<div class="flex flex-col gap-space-md">
+<!-- VARIANT 1: GRANTED (Default Active) -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-lg shadow-md transition-all" id="card-granted">
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-on-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Root Detected &amp; Verified</span>
+</div>
+<span class="font-code-sm text-code-sm text-primary">Magisk Su Daemon v27.0</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-on-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+          READY
+        </span>
+</div>
+<!-- Telemetry Data Grid -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-2 mb-space-md">
+<div class="flex items-center justify-between font-code-sm text-code-sm py-0.5">
+<span class="text-on-surface-variant">Provider / Mode</span>
+<span class="text-on-surface font-medium">Magisk v27.0 (Zygisk Mode Active)</span>
+</div>
+<div class="flex items-center justify-between font-code-sm text-code-sm py-0.5">
+<span class="text-on-surface-variant">Su Binary Path</span>
+<span class="text-on-surface font-medium bg-surface-container-highest px-1.5 py-0.5 rounded">/system/bin/su</span>
+</div>
+<div class="flex items-center justify-between font-code-sm text-code-sm py-0.5">
+<span class="text-on-surface-variant">Shell Pipe Latency</span>
+<span class="text-status-success font-medium">14ms [Fast IPC]</span>
+</div>
+<div class="flex items-center justify-between font-code-sm text-code-sm py-0.5">
+<span class="text-on-surface-variant">SELinux Domain</span>
+<span class="text-on-surface font-medium">u:r:magisk:s0 (Permissive Hook)</span>
+</div>
+</div>
+<!-- Command Output Terminal Box -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm font-code-sm text-code-sm text-on-surface flex flex-col gap-1">
+<div class="flex items-center justify-between text-text-muted mb-0.5">
+<span>DIAGNOSTIC TEST PASS</span>
+<span class="text-primary text-[10px]">EXIT CODE 0</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="text-primary">$</span>
+<span>su -c "id"</span>
+</div>
+<div class="text-primary font-medium tracking-tight overflow-x-auto">
+          uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0
+        </div>
+</div>
+</div>
+<!-- VARIANT 2: CHECKING (Hidden by default) -->
+<div class="hidden flex-col bg-surface-container-low rounded-xl p-space-lg shadow-md transition-all" id="card-checking">
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary animate-spin">
+<span class="material-symbols-outlined text-[22px]">progress_activity</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface">Probing Superuser Interface...</span>
+<p class="font-code-sm text-code-sm text-on-surface-variant">Sending socket handshake to /dev/socket/su_daemon</p>
+</div>
+</div>
+<!-- Animated Pulse Bar -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden mb-space-md relative">
+<div class="bg-primary h-full rounded-full w-2/3 animate-pulse"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm font-code-sm text-code-sm text-text-muted flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="text-status-warning">[POLL]</span>
+<span>Searching $PATH partitions for su binary...</span>
+</div>
+<div class="flex items-center gap-2 text-primary">
+<span class="text-status-success">[FOUND]</span>
+<span>Discovered binary at /system/bin/su</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="text-status-warning">[REQ]</span>
+<span>Awaiting superuser manager prompt resolution...</span>
+</div>
+</div>
+</div>
+<!-- VARIANT 3: DENIED (§116 - Hidden by default) -->
+<div class="hidden flex-col bg-surface-container-low rounded-xl p-space-lg shadow-md transition-all" id="card-denied">
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-status-warning/20 flex items-center justify-center text-status-warning">
+<span class="material-symbols-outlined text-[22px]">gpp_bad</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface">Root Permission Denied</span>
+<p class="font-code-sm text-code-sm text-status-warning">Superuser Manager Rejected Request (§116)</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-variant text-status-warning font-label-md text-label-md flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[13px]">block</span>
+          DENIED
+        </span>
+</div>
+<div class="bg-surface-container rounded-lg p-space-sm mb-space-md text-on-surface-variant font-body-md text-body-md">
+        The Magisk / KernelSU grant dialog was dismissed or explicitly set to deny. Advanced supplicant operations cannot be executed.
+      </div>
+<div class="flex items-center gap-2 bg-surface-container-lowest p-space-sm rounded-lg font-code-sm text-code-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]">info</span>
+<span>Open Magisk &gt; Superuser &gt; Enable toggle for this App.</span>
+</div>
+</div>
+<!-- VARIANT 4: UNAVAILABLE (§117 - Hidden by default) -->
+<div class="hidden flex-col bg-surface-container-low rounded-xl p-space-lg shadow-md transition-all" id="card-unavailable">
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-status-error/20 flex items-center justify-center text-status-error">
+<span class="material-symbols-outlined text-[22px]">cancel</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface">Root Unavailable</span>
+<p class="font-code-sm text-code-sm text-text-muted">No su binary detected (§117)</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[13px]">close</span>
+          NOT FOUND
+        </span>
+</div>
+<div class="bg-surface-container rounded-lg p-space-sm mb-space-md font-body-md text-body-md text-on-surface-variant">
+        This device does not appear to possess an unlocked bootloader or standard root provider. You can still use standard Wi-Fi scanning and telemetry.
+      </div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm text-text-muted flex flex-col gap-1">
+<span>Searched locations:</span>
+<span class="text-status-error line-through">/system/bin/su</span>
+<span class="text-status-error line-through">/system/xbin/su</span>
+<span class="text-status-error line-through">/sbin/su</span>
+</div>
+</div>
+<!-- Capability & Feature Matrix (§12) -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-lg shadow-md mt-space-xs">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">checklist</span>
+<span class="font-title-md text-title-md text-on-surface">Diagnostic Capability Matrix</span>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">POLICIES</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1: Advanced Supplicant -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Advanced Supplicant Control</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">wpa_cli direct UNIX socket injection</span>
+</div>
+<span class="px-2 py-1 rounded bg-on-primary-container text-on-primary font-code-sm text-code-sm font-medium whitespace-nowrap">
+            ROOT ENABLED
+          </span>
+</div>
+<!-- Item 2: Low-level Frame / WPS PBC -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">802.11 WPS Frame Triggers</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">M1-M8 Handshake &amp; PIN state engine</span>
+</div>
+<span class="px-2 py-1 rounded bg-on-primary-container text-on-primary font-code-sm text-code-sm font-medium whitespace-nowrap">
+            ROOT ENABLED
+          </span>
+</div>
+<!-- Item 3: Standard Scan -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Standard Wi-Fi Scanning</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">Nearby BSSID, RSSI, and frequency bands</span>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant font-code-sm text-code-sm whitespace-nowrap">
+            NO ROOT NEEDED
+          </span>
+</div>
+<!-- Item 4: Diagnostics -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Network Diagnostics Telemetry</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">Channel overlap, link speeds, IP leases</span>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant font-code-sm text-code-sm whitespace-nowrap">
+            NO ROOT NEEDED
+          </span>
+</div>
+</div>
+</div>
+<!-- Security & Isolation Callout (§12, §121) -->
+<div class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-8 h-8 min-w-[32px] rounded bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">Field Safety Guarantee</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Root access is invoked exclusively on-device via isolated background sub-processes. The app never alters system partitions, writes persistent boot scripts, or requests root repeatedly without explicit manual initiation.
+        </p>
+</div>
+</div>
+<!-- Actions Area (§12, §84, §116) -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Primary CTA: Grant / Continue -->
+<button class="w-full h-12 bg-primary-container hover:bg-primary-container/90 active:scale-[0.99] transition-transform rounded-lg flex items-center justify-center gap-space-sm text-on-primary-container font-label-lg text-label-lg font-medium shadow-md" id="primary-cta">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+<span>Continue to Home</span>
+</button>
+<!-- Secondary Row: Diagnostics & Check Again -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="h-12 bg-surface-container hover:bg-surface-container-highest transition-colors rounded-lg flex items-center justify-center gap-space-xs text-secondary font-label-lg text-label-lg" onclick="simulateCheck()">
+<span class="material-symbols-outlined text-[18px]" id="refresh-icon">refresh</span>
+<span>Check Again</span>
+</button>
+<button class="h-12 bg-surface-container hover:bg-surface-container-highest transition-colors rounded-lg flex items-center justify-center gap-space-xs text-secondary font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Diagnostics</span>
+</button>
+</div>
+<!-- Non-rooted Limited Mode Fallback (§116, §117) -->
+<button class="py-2 text-center text-text-muted hover:text-on-surface transition-colors font-body-md text-body-md flex items-center justify-center gap-1">
+<span>Continue without Root (Limited Mode)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward_ios</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  function switchState(stateName) {
+    const states = ['granted', 'checking', 'denied', 'unavailable'];
+    states.forEach(s => {
+      const card = document.getElementById('card-' + s);
+      const tab = document.getElementById('btn-tab-' + s);
+      if (card && tab) {
+        if (s === stateName) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+          tab.classList.add('bg-surface-container-highest', 'text-primary', 'font-medium');
+          tab.classList.remove('text-on-surface-variant');
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('flex');
+          tab.classList.remove('bg-surface-container-highest', 'text-primary', 'font-medium');
+          tab.classList.add('text-on-surface-variant');
+        }
+      }
+    });
+
+    // Update primary CTA wording according to status
+    const cta = document.getElementById('primary-cta');
+    if (cta) {
+      if (stateName === 'granted') {
+        cta.innerHTML = '<span class="material-symbols-outlined text-[20px]">arrow_forward</span><span>Continue to Home</span>';
+        cta.classList.remove('opacity-60');
+      } else if (stateName === 'checking') {
+        cta.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Verifying Privileges...</span>';
+        cta.classList.add('opacity-60');
+      } else if (stateName === 'denied') {
+        cta.innerHTML = '<span class="material-symbols-outlined text-[20px]">security_update_good</span><span>Request Superuser Prompt Again</span>';
+        cta.classList.remove('opacity-60');
+      } else if (stateName === 'unavailable') {
+        cta.innerHTML = '<span class="material-symbols-outlined text-[20px]">wifi_tethering</span><span>Proceed in Limited Mode</span>';
+        cta.classList.remove('opacity-60');
+      }
+    }
+  }
+
+  function simulateCheck() {
+    const icon = document.getElementById('refresh-icon');
+    if (icon) icon.classList.add('animate-spin');
+    switchState('checking');
+    setTimeout(() => {
+      if (icon) icon.classList.remove('animate-spin');
+      switchState('granted');
+    }, 1200);
+  }
+</script></main><footer class="fixed bottom-0 left-0 right-0 z-50 pointer-events-none pb-safe"><div class="w-full flex justify-center items-center py-2"><div class="w-32 h-1 bg-on-surface-variant/40 rounded-full"></div></div></footer></body></html>

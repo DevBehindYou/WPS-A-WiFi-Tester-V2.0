@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Roboto+Flex:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#005652","on-background":"#e1e2e8","outline-variant":"#3f4947","surface-base":"#191c20","surface-container-highest":"#323539","on-surface-variant":"#bec9c7","inverse-surface":"#e1e2e8","surface-variant":"#323539","error-container":"#93000a","on-secondary-fixed":"#001c3b","tertiary-container":"#7fc4ff","tertiary-fixed":"#cde5ff","on-secondary-container":"#98b7e9","surface-bright":"#36393e","on-secondary":"#0a315b","secondary-container":"#274773","on-primary-fixed-variant":"#00504b","status-success":"#4caf50","secondary-fixed-dim":"#a9c8fb","primary-fixed":"#a4f0e9","on-tertiary-fixed-variant":"#004b74","surface-container-high":"#282c34","on-error":"#690005","background":"#111417","on-secondary-fixed-variant":"#274773","on-primary":"#003734","surface-dim":"#111417","inverse-on-surface":"#2e3135","on-surface":"#e1e2e8","outline":"#889391","on-tertiary":"#003352","surface":"#111417","outline-border":"#43474e","surface-container-lowest":"#0b0e12","surface-tint":"#89d4cd","surface-canvas":"#111318","error":"#ffb4ab","text-muted":"#8e9199","surface-container-low":"#191c20","primary-container":"#80cbc4","on-tertiary-fixed":"#001d32","status-warning":"#ffb74d","surface-container":"#1d2024","on-error-container":"#ffdad6","inverse-primary":"#136964","status-error":"#ef5350","secondary":"#a9c8fb","primary":"#9ce7e0","secondary-fixed":"#d5e3ff","primary-fixed-dim":"#89d4cd","on-primary-fixed":"#00201e","tertiary-fixed-dim":"#94ccff","tertiary":"#bbddff","on-tertiary-container":"#00517d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"1.5rem","gutter-tablet":"1.5rem","space-md":"0.75rem","space-sm":"0.5rem","margin":"1rem","gutter":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem","space-lg":"1rem"},"fontFamily":{"title-lg":["Roboto Flex"],"code-sm":["JetBrains Mono"],"label-lg":["Roboto Flex"],"body-lg":["Roboto Flex"],"headline-md":["Roboto Flex"],"headline-lg":["Roboto Flex"],"label-md":["JetBrains Mono"],"body-sm":["Roboto Flex"],"title-md":["Roboto Flex"],"body-md":["Roboto Flex"],"headline-lg-mobile":["Roboto Flex"]},"fontSize":{"title-lg":["20px",{"lineHeight":"28px","fontWeight":"500"}],"code-sm":["11px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe"><div class="flex items-center justify-between px-margin h-6 select-none text-on-surface-variant font-label-md text-label-md"><span class="tracking-tight font-medium">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0 flex-1"><span class="material-symbols-outlined text-primary text-[24px]">cell_tower</span><h1 class="font-title-lg text-title-lg text-on-surface font-medium truncate tracking-normal">Diagnostics</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl space-y-space-md">
+<!-- Header Bar / Subtitle & Quick Actions (§47) -->
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary tracking-wide uppercase">System Audit</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Device environment and capability checks</p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-10 px-space-md rounded-xl bg-surface-container-high text-primary hover:bg-surface-bright active:scale-95 transition-all flex items-center gap-space-xs shadow-sm" id="btn-refresh">
+<span class="material-symbols-outlined text-[18px]" id="refresh-icon">refresh</span>
+<span class="font-label-lg text-label-lg">Refresh Checks</span>
+</button>
+<button class="h-10 px-space-md rounded-xl bg-surface-container hover:bg-surface-container-highest active:scale-95 text-secondary transition-all flex items-center gap-space-xs shadow-sm" id="btn-copy">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span class="font-label-lg text-label-lg">Copy All</span>
+</button>
+</div>
+</div>
+<!-- Environment Summary Banner (§48) -->
+<div class="w-full rounded-xl bg-surface-container p-space-md shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-primary/5 pointer-events-none blur-2xl"></div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0 text-primary shadow-sm">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-md text-title-md text-on-surface font-medium">Telemetry Baseline</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-primary-container/20 text-primary font-label-md text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            SYS-AUDIT-34
+          </span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-code-sm text-code-sm">
+<span class="inline-flex items-center gap-1 text-status-success">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 7 passed
+          </span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 text-status-warning">
+<span class="material-symbols-outlined text-[14px]">warning</span> 2 warnings
+          </span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant/60">
+<span class="material-symbols-outlined text-[14px]">cancel</span> 0 errors
+          </span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-1 pt-space-xs sm:pt-0 border-t sm:border-t-0 border-outline-border/20">
+<span class="font-code-sm text-code-sm text-on-surface-variant uppercase tracking-wider">Audit Health</span>
+<span class="px-space-md py-1 rounded-full bg-status-success/20 text-status-success font-label-md text-code-sm flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+        Ready for Scanning
+      </span>
+</div>
+</div>
+<!-- Diagnostic Sections (§49–56) -->
+<div class="space-y-space-sm w-full" id="accordion-group">
+<!-- Section 1: Device & Android (§50) -->
+<div class="rounded-xl bg-surface-container overflow-hidden shadow-sm transition-all duration-200">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-bright/30 transition-colors focus:outline-none" data-accordion-trigger="sec-device" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">smartphone</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-medium truncate">Device &amp; Android Platform</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-md text-code-sm">API 34</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">Google Pixel 7 Pro • aarch64</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[22px] transition-transform duration-200" data-accordion-icon="">expand_more</span>
+</button>
+<div class="p-space-md pt-0 space-y-space-xs" id="sec-device">
+<div class="rounded-lg bg-surface-container-lowest p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Manufacturer</span>
+<span class="font-label-md text-label-md text-on-surface">Google</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hardware Model</span>
+<span class="font-label-md text-label-md text-on-surface">Pixel 7 Pro (cheetah)</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Android Release</span>
+<span class="font-label-md text-label-md text-on-surface">Android 14 (VanillaIceCream)</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">API Level</span>
+<span class="font-code-sm text-code-sm text-primary">34</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kernel Architecture</span>
+<span class="font-code-sm text-code-sm text-on-surface">aarch64 (ARM64-v8a)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Root Diagnostics (§51) -->
+<div class="rounded-xl bg-surface-container overflow-hidden shadow-sm transition-all duration-200">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-bright/30 transition-colors focus:outline-none" data-accordion-trigger="sec-root" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-status-success shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-medium truncate">Root Diagnostics</span>
+<span class="px-2 py-0.5 rounded-full bg-status-success/20 text-status-success font-label-md text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Granted
+              </span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">Magisk v27.0 • Zygisk active</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[22px] transition-transform duration-200 rotate-180" data-accordion-icon="">expand_more</span>
+</button>
+<div class="p-space-md pt-0 space-y-space-xs" id="sec-root">
+<div class="rounded-lg bg-surface-container-lowest p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Superuser Status</span>
+<span class="px-2 py-0.5 rounded-full bg-status-success/20 text-status-success font-label-md text-code-sm">Active &amp; Responsive</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Provider / Framework</span>
+<span class="font-code-sm text-code-sm text-on-surface">Magisk v27.0 (Zygisk active)</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Root Shell Path</span>
+<span class="font-code-sm text-code-sm text-secondary">/system/bin/su (Available)</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Execution Latency</span>
+<span class="font-code-sm text-code-sm text-status-success">14ms IPC latency</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Wi-Fi & Interface Diagnostics (§52, §53) -->
+<div class="rounded-xl bg-surface-container overflow-hidden shadow-sm transition-all duration-200">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-bright/30 transition-colors focus:outline-none" data-accordion-trigger="sec-wifi" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">wifi_tethering</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-medium truncate">Wi-Fi &amp; Interface Diagnostics</span>
+<span class="px-2 py-0.5 rounded-full bg-status-success/20 text-status-success font-label-md text-code-sm">wlan0 UP</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">iw dev matched • Unrestricted Scan</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[22px] transition-transform duration-200 rotate-180" data-accordion-icon="">expand_more</span>
+</button>
+<div class="p-space-md pt-0 space-y-space-xs" id="sec-wifi">
+<div class="rounded-lg bg-surface-container-lowest p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wi-Fi Subsystem State</span>
+<span class="font-label-md text-label-md text-status-success flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Enabled
+            </span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Detected Interface</span>
+<span class="font-code-sm text-code-sm text-primary">wlan0 (via iw dev)</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">MAC Configuration</span>
+<span class="font-code-sm text-code-sm text-on-surface">Randomized (HW: 24:XX:XX:XX:XX:7A)</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Scanning Capability</span>
+<span class="font-code-sm text-code-sm text-status-success">Unrestricted (Location &amp; Nearby OK)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Supplicant & Socket (§54, §57) -->
+<div class="rounded-xl bg-surface-container overflow-hidden shadow-sm transition-all duration-200">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-bright/30 transition-colors focus:outline-none" data-accordion-trigger="sec-supplicant" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-status-warning shrink-0">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-medium truncate">Supplicant &amp; Control Socket</span>
+<span class="px-2 py-0.5 rounded-full bg-status-warning/20 text-status-warning font-label-md text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">warning</span> Limited
+              </span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">wpa_cli found • IPC access restricted</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[22px] transition-transform duration-200 rotate-180" data-accordion-icon="">expand_more</span>
+</button>
+<div class="p-space-md pt-0 space-y-space-sm" id="sec-supplicant">
+<div class="rounded-lg bg-surface-container-lowest p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Supplicant CLI Binary</span>
+<span class="font-code-sm text-code-sm text-secondary truncate ml-2">/vendor/bin/hw/wpa_cli (Found)</span>
+</div>
+<div class="flex flex-col py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Control Socket Path</span>
+<span class="font-code-sm text-code-sm text-on-surface break-all bg-surface-container-high/60 rounded px-2 py-1 mt-1">/data/vendor/wifi/wpa/sockets/wlan0</span>
+</div>
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Socket Accessibility</span>
+<span class="font-code-sm text-code-sm text-status-warning">Restricted (Permission denied)</span>
+</div>
+</div>
+<div class="rounded-lg bg-status-warning/10 p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-warning text-[18px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-status-warning">Diagnostic Note (§57)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Vendor SELinux policy restricts domain transition from default root context to the vendor wpa socket IPC. Hardware fallback scans remain fully active.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 5: SELinux Status (§55) -->
+<div class="rounded-xl bg-surface-container overflow-hidden shadow-sm transition-all duration-200">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-bright/30 transition-colors focus:outline-none" data-accordion-trigger="sec-selinux" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-medium truncate">SELinux Enforcement Status</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-secondary font-label-md text-code-sm">Enforcing</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">Permissive su domain mapped</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[22px] transition-transform duration-200" data-accordion-icon="">expand_more</span>
+</button>
+<div class="p-space-md pt-0 space-y-space-xs" id="sec-selinux">
+<div class="rounded-lg bg-surface-container-lowest p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active Kernel Mode</span>
+<span class="font-code-sm text-code-sm text-primary">Enforcing</span>
+</div>
+<div class="flex flex-col py-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Policy Notice</span>
+<p class="font-code-sm text-code-sm text-on-surface-variant mt-1 leading-relaxed">
+              Standard Android security policy active. Root shell operates in permissive su domain.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 6: Permissions Checklist (§56) -->
+<div class="rounded-xl bg-surface-container overflow-hidden shadow-sm transition-all duration-200">
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-bright/30 transition-colors focus:outline-none" data-accordion-trigger="sec-perms" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-status-success shrink-0">
+<span class="material-symbols-outlined text-[20px]">rule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-medium truncate">Runtime Permissions Checklist</span>
+<span class="px-2 py-0.5 rounded-full bg-status-success/20 text-status-success font-label-md text-code-sm">3/3 Validated</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">Nearby • Fine Location • Notifications</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[22px] transition-transform duration-200 rotate-180" data-accordion-icon="">expand_more</span>
+</button>
+<div class="p-space-md pt-0 space-y-space-xs" id="sec-perms">
+<div class="rounded-lg bg-surface-container-lowest p-space-sm divide-y divide-outline-border/10 space-y-space-xs">
+<div class="flex items-center justify-between py-1.5 px-1">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-status-success text-[18px]">check_circle</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">NEARBY_WIFI_DEVICES</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-success/20 text-status-success font-label-md text-code-sm">Granted ✓</span>
+</div>
+<div class="flex items-center justify-between py-1.5 px-1 pt-2">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-status-success text-[18px]">check_circle</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">ACCESS_FINE_LOCATION</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-success/20 text-status-success font-label-md text-code-sm">Granted ✓</span>
+</div>
+<div class="flex items-center justify-between py-1.5 px-1 pt-2">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-status-success text-[18px]">check_circle</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">POST_NOTIFICATIONS</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-success/20 text-status-success font-label-md text-code-sm">Granted ✓</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notice Container (Delight interaction feedback) -->
+<div class="fixed bottom-24 inset-x-margin mx-auto max-w-sm bg-surface-bright text-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center justify-between gap-space-sm transition-all duration-300 opacity-0 pointer-events-none translate-y-3 z-50" id="toast">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]" id="toast-icon">check</span>
+<span class="font-body-sm text-body-sm truncate" id="toast-msg">Audit report copied to clipboard</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant uppercase">OK</span>
+</div>
+</div>
+<script>
+  (function() {
+    // Accordion Toggle Behavior
+    const triggers = document.querySelectorAll('[data-accordion-trigger]');
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const targetId = trigger.getAttribute('data-accordion-trigger');
+        const content = document.getElementById(targetId);
+        const icon = trigger.querySelector('[data-accordion-icon]');
+        
+        if (!content) return;
+        const isHidden = content.classList.contains('hidden');
+        
+        if (isHidden) {
+          content.classList.remove('hidden');
+          if (icon) icon.classList.add('rotate-180');
+        } else {
+          content.classList.add('hidden');
+          if (icon) icon.classList.remove('rotate-180');
+        }
+      });
+    });
+
+    // Default collapse state for section 1 and 5 to demonstrate density & expansion
+    const sec1 = document.getElementById('sec-device');
+    const sec5 = document.getElementById('sec-selinux');
+    if (sec1) sec1.classList.add('hidden');
+    if (sec5) sec5.classList.add('hidden');
+
+    // Toast helper
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-msg');
+    let toastTimeout = null;
+
+    function showToast(message) {
+      if (!toast) return;
+      toastMsg.textContent = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2600);
+    }
+
+    // Copy action
+    const btnCopy = document.getElementById('btn-copy');
+    if (btnCopy) {
+      btnCopy.addEventListener('click', () => {
+        const report = [
+          '=== TELECOM DIAGNOSTIC REPORT ===',
+          'Status: Ready for Scanning (7 passed, 2 warnings, 0 errors)',
+          'Device: Google Pixel 7 Pro (cheetah) | API 34 (Android 14)',
+          'Root: Magisk v27.0 (Zygisk active) | /system/bin/su | 14ms latency',
+          'Wi-Fi: wlan0 (iw dev matched) | Scan Capability: Unrestricted',
+          'Supplicant: /vendor/bin/hw/wpa_cli (Found) | Socket: Restricted IPC',
+          'SELinux: Enforcing (su domain permissive)',
+          'Permissions: NEARBY_WIFI_DEVICES (✓), ACCESS_FINE_LOCATION (✓), POST_NOTIFICATIONS (✓)'
+        ].join('\n');
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(report).then(() => {
+            showToast('All diagnostics copied to clipboard');
+          }).catch(() => {
+            showToast('Diagnostic log serialized');
+          });
+        } else {
+          showToast('Diagnostics exported successfully');
+        }
+      });
+    }
+
+    // Refresh action with lively micro-interaction
+    const btnRefresh = document.getElementById('btn-refresh');
+    const refreshIcon = document.getElementById('refresh-icon');
+    if (btnRefresh && refreshIcon) {
+      btnRefresh.addEventListener('click', () => {
+        refreshIcon.classList.add('animate-spin');
+        btnRefresh.setAttribute('disabled', 'true');
+        btnRefresh.classList.add('opacity-70');
+
+        setTimeout(() => {
+          refreshIcon.classList.remove('animate-spin');
+          btnRefresh.removeAttribute('disabled');
+          btnRefresh.classList.remove('opacity-70');
+          showToast('Capabilities re-verified (14ms latency)');
+        }, 850);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]" data-active-classes="[&amp;_.nav-pill]:bg-primary-container [&amp;_.nav-pill]:text-on-primary-container [&amp;_.nav-icon]:text-on-primary-container [&amp;_.nav-label]:text-on-surface [&amp;_.nav-label]:font-medium"><div class="flex items-center justify-around h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">radar</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors [&amp;_.nav-pill]:bg-primary-container [&amp;_.nav-pill]:text-on-primary-container [&amp;_.nav-icon]:text-on-primary-container [&amp;_.nav-label]:text-on-surface [&amp;_.nav-label]:font-medium" data-path="diagnostics" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">troubleshoot</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Diagnostics</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="logs" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">terminal</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Logs</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">settings</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Settings</span></a></div></nav></body></html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Roboto+Flex:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#005652","on-background":"#e1e2e8","outline-variant":"#3f4947","surface-base":"#191c20","surface-container-highest":"#323539","on-surface-variant":"#bec9c7","inverse-surface":"#e1e2e8","surface-variant":"#323539","error-container":"#93000a","on-secondary-fixed":"#001c3b","tertiary-container":"#7fc4ff","tertiary-fixed":"#cde5ff","on-secondary-container":"#98b7e9","surface-bright":"#36393e","on-secondary":"#0a315b","secondary-container":"#274773","on-primary-fixed-variant":"#00504b","status-success":"#4caf50","secondary-fixed-dim":"#a9c8fb","primary-fixed":"#a4f0e9","on-tertiary-fixed-variant":"#004b74","surface-container-high":"#282c34","on-error":"#690005","background":"#111417","on-secondary-fixed-variant":"#274773","on-primary":"#003734","surface-dim":"#111417","inverse-on-surface":"#2e3135","on-surface":"#e1e2e8","outline":"#889391","on-tertiary":"#003352","surface":"#111417","outline-border":"#43474e","surface-container-lowest":"#0b0e12","surface-tint":"#89d4cd","surface-canvas":"#111318","error":"#ffb4ab","text-muted":"#8e9199","surface-container-low":"#191c20","primary-container":"#80cbc4","on-tertiary-fixed":"#001d32","status-warning":"#ffb74d","surface-container":"#1d2024","on-error-container":"#ffdad6","inverse-primary":"#136964","status-error":"#ef5350","secondary":"#a9c8fb","primary":"#9ce7e0","secondary-fixed":"#d5e3ff","primary-fixed-dim":"#89d4cd","on-primary-fixed":"#00201e","tertiary-fixed-dim":"#94ccff","tertiary":"#bbddff","on-tertiary-container":"#00517d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"1.5rem","gutter-tablet":"1.5rem","space-md":"0.75rem","space-sm":"0.5rem","margin":"1rem","gutter":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem","space-lg":"1rem"},"fontFamily":{"title-lg":["Roboto Flex"],"code-sm":["JetBrains Mono"],"label-lg":["Roboto Flex"],"body-lg":["Roboto Flex"],"headline-md":["Roboto Flex"],"headline-lg":["Roboto Flex"],"label-md":["JetBrains Mono"],"body-sm":["Roboto Flex"],"title-md":["Roboto Flex"],"body-md":["Roboto Flex"],"headline-lg-mobile":["Roboto Flex"]},"fontSize":{"title-lg":["20px",{"lineHeight":"28px","fontWeight":"500"}],"code-sm":["11px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe"><div class="flex items-center justify-between px-margin h-6 select-none text-on-surface-variant font-label-md text-label-md"><span class="tracking-tight font-medium">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0 flex-1"><span class="material-symbols-outlined text-primary text-[24px]">cell_tower</span><h1 class="font-title-lg text-title-lg text-on-surface font-medium truncate tracking-normal">Home</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl gap-space-lg select-none">
+<!-- System Diagnostic Header Bar / Status Matrix (§15-16, §116) -->
+<div class="w-full bg-surface-container-low rounded-2xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-status-error animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Device Telemetry</span>
+</div>
+<div class="px-space-sm py-0.5 rounded-full bg-error-container/40 text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">gpp_bad</span>
+<span class="font-code-sm text-code-sm font-medium">PRIVILEGED_SHELL_DENIED</span>
+</div>
+</div>
+<!-- Diagnostic Grid Pill Badges -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container rounded-xl p-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface-variant">ROOT PRIV</span>
+<span class="font-code-sm text-code-sm text-status-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">cancel</span> exit 1
+        </span>
+</div>
+<div class="bg-surface-container rounded-xl p-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface-variant">ADAPTER</span>
+<span class="font-code-sm text-code-sm text-status-success font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> ENABLED
+        </span>
+</div>
+<div class="bg-surface-container rounded-xl p-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface-variant">IFACE SOCK</span>
+<span class="font-code-sm text-code-sm text-status-success font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">wifi_tethering</span> wlan0 UP
+        </span>
+</div>
+<div class="bg-surface-container rounded-xl p-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface-variant">SUPPLICANT</span>
+<span class="font-code-sm text-code-sm text-status-warning font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">lock</span> RESTRICTED
+        </span>
+</div>
+</div>
+</div>
+<!-- Hero Container: Root Denied Warning Card (§116, §117, §130) -->
+<div class="w-full bg-surface-container rounded-2xl p-space-lg flex flex-col items-center text-center shadow-lg relative overflow-hidden">
+<!-- Ambient Red Halo Glow -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-44 h-44 bg-status-error/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Visual Shield Emblem -->
+<div class="relative w-20 h-20 mb-space-md flex items-center justify-center">
+<div class="absolute inset-0 bg-surface-container-highest rounded-2xl transform rotate-45 scale-90"></div>
+<div class="absolute inset-0 bg-error-container/30 rounded-2xl transform rotate-12"></div>
+<div class="relative w-16 h-16 rounded-xl bg-surface-container-high flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-status-error text-[36px]" style="font-variation-settings: 'FILL' 1;">gpp_maybe</span>
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-error-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-error text-[14px]">priority_high</span>
+</div>
+</div>
+<!-- Headline and Description Verbatim (§116) -->
+<span class="px-space-sm py-0.5 mb-space-xs rounded-full bg-surface-container-highest text-status-warning font-code-sm text-code-sm">
+      SECURITY EXCEPTION • §116
+    </span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium tracking-tight mb-space-xs">
+      Root access denied
+    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs leading-relaxed mb-space-md">
+      Advanced network operations cannot continue without root access. You can continue using available diagnostics and standard Wi-Fi scanning.
+    </p>
+<!-- Context Clarification Subtitle -->
+<div class="w-full bg-surface-container-low rounded-xl px-space-md py-space-xs flex items-center gap-space-xs text-left">
+<span class="material-symbols-outlined text-status-warning text-[18px] shrink-0">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+        Scanner restricted — Superuser access was refused by system or root manager (Magisk / KernelSU / APatch).
+      </p>
+</div>
+</div>
+<!-- Primary Action Stack (§84, §116) -->
+<div class="w-full flex flex-col gap-space-sm">
+<!-- Primary Root Retry Button with Interactive Feedback -->
+<button class="w-full h-12 bg-primary-container text-on-primary-container rounded-xl font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md active:scale-[0.98] transition-all" id="btn-request-root">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+<span>Request Root Again</span>
+</button>
+<!-- Secondary Safe Navigation Button -->
+<button class="w-full h-12 bg-surface-container-high text-secondary rounded-xl font-label-lg text-label-lg font-medium flex items-center justify-center gap-space-xs active:bg-surface-bright transition-colors" id="btn-limited-mode">
+<span class="material-symbols-outlined text-[20px]">radar</span>
+<span>Continue in Limited Scanner Mode</span>
+</button>
+<!-- Tertiary Auxiliary Row -->
+<div class="flex items-center justify-between px-space-xs pt-space-xs">
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary font-label-md text-code-sm transition-colors py-space-xs" id="btn-open-su-mgr">
+<span class="material-symbols-outlined text-[16px]">admin_panel_settings</span>
+<span>Open Superuser Manager</span>
+</button>
+<a class="flex items-center gap-0.5 text-primary font-label-md text-code-sm hover:underline py-space-xs" href="#diagnostics">
+<span>View Root Diagnostics (§51)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Capability Comparison / Impact Card (§116, §117) -->
+<div class="w-full bg-surface-container-low rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<h3 class="font-title-md text-title-md text-on-surface">Superuser Impact Analysis</h3>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">STATE 0x0E</span>
+</div>
+<!-- Available Section -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs pb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+<span class="font-label-md text-label-md text-status-success tracking-wide uppercase">Operational in Limited Mode</span>
+</div>
+<div class="bg-surface-container rounded-xl p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-success text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface leading-tight">Passive 802.11 Wi-Fi scan</span>
+<span class="font-code-sm text-code-sm text-text-muted">SSID, BSSID, RSSI dBm, Frequency channels</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-success text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface leading-tight">Channel congestion telemetry</span>
+<span class="font-code-sm text-code-sm text-text-muted">Overlapping AP density &amp; standard band distribution</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-success text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface leading-tight">Read-only capability survey</span>
+<span class="font-code-sm text-code-sm text-text-muted">Beacon security parameters &amp; RSN/WPA IEs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Unavailable Section -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs pb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-error"></span>
+<span class="font-label-md text-label-md text-status-error tracking-wide uppercase">Locked (Superuser Required)</span>
+</div>
+<div class="bg-surface-container rounded-xl p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-error text-[18px] shrink-0 mt-0.5">block</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface leading-tight">wpa_cli socket IPC binding</span>
+<span class="font-code-sm text-code-sm text-text-muted">Direct frame injection &amp; supplicant control socket</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-error text-[18px] shrink-0 mt-0.5">block</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface leading-tight">WPS Push-Button (PBC) triggers</span>
+<span class="font-code-sm text-code-sm text-text-muted">Hardware session pairing on wireless interfaces</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-error text-[18px] shrink-0 mt-0.5">block</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface leading-tight">PIN-based handshake negotiation</span>
+<span class="font-code-sm text-code-sm text-text-muted">M1-M8 exchange tracking &amp; credential extraction</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-status-error text-[18px] shrink-0 mt-0.5">block</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface leading-tight">Raw wlan0 ioctl reconfiguration</span>
+<span class="font-code-sm text-code-sm text-text-muted">Interface flags, link frequency locks, driver resets</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Troubleshooting & Remediation Accordion Card (§114, §116) -->
+<div class="w-full bg-surface-container rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">build_circle</span>
+<h3 class="font-title-md text-title-md text-on-surface">How to Grant Superuser Access</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Follow these verification steps in your device's installed root management daemon:
+    </p>
+<!-- Remediation Steps Timeline -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Step 1 -->
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-code-sm text-code-sm shrink-0">1</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium">Verify DenyList / Su Policy</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Open Magisk, KernelSU, or APatch. Ensure this utility is explicitly permitted and not assigned to an active DenyList or Enforce-Deny isolation.</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-code-sm text-code-sm shrink-0">2</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium">Reset Superuser Timeout</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Check automatic denial settings. Set prompt duration to at least 20 seconds or switch response mode to interactive "Prompt".</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-code-sm text-code-sm shrink-0">3</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium">Namespace Mount Isolation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Configure SU Mount Namespace Mode to "Global Namespace" so supplicant sockets (/data/misc/wifi/sockets) remain traversable.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Alternative Environment Banner (§117) -->
+<div class="w-full bg-surface-container-low rounded-2xl p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-text-muted text-[24px] shrink-0">mobile_friendly</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Device unrooted?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">See Root Unavailable guidance (§117)</span>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded-xl bg-surface-container-high text-secondary hover:text-on-surface font-label-md text-code-sm font-medium shrink-0 transition-colors" id="btn-unrooted-help">
+      Details
+    </button>
+</div>
+</div>
+<script>
+  (function() {
+    const rootBtn = document.getElementById('btn-request-root');
+    const limitedBtn = document.getElementById('btn-limited-mode');
+    const suMgrBtn = document.getElementById('btn-open-su-mgr');
+    const unrootedBtn = document.getElementById('btn-unrooted-help');
+
+    if (rootBtn) {
+      rootBtn.addEventListener('click', function() {
+        const originalContent = rootBtn.innerHTML;
+        rootBtn.disabled = true;
+        rootBtn.classList.add('opacity-75');
+        rootBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px] animate-spin">sync</span>
+          <span>Spawning SU daemon...</span>
+        `;
+        
+        setTimeout(() => {
+          rootBtn.innerHTML = `
+            <span class="material-symbols-outlined text-status-error text-[20px]">cancel</span>
+            <span>Request Timed Out (exit 1)</span>
+          `;
+          rootBtn.classList.remove('opacity-75');
+          
+          setTimeout(() => {
+            rootBtn.disabled = false;
+            rootBtn.innerHTML = originalContent;
+          }, 2400);
+        }, 1800);
+      });
+    }
+
+    if (limitedBtn) {
+      limitedBtn.addEventListener('click', function() {
+        // Direct transition feedback to standard scanner view
+        limitedBtn.classList.add('scale-95');
+        setTimeout(() => {
+          limitedBtn.classList.remove('scale-95');
+        }, 150);
+      });
+    }
+
+    if (suMgrBtn) {
+      suMgrBtn.addEventListener('click', function() {
+        const prevText = suMgrBtn.querySelector('span:last-child').textContent;
+        suMgrBtn.querySelector('span:last-child').textContent = 'Launching Manager Intent...';
+        setTimeout(() => {
+          suMgrBtn.querySelector('span:last-child').textContent = prevText;
+        }, 1500);
+      });
+    }
+
+    if (unrootedBtn) {
+      unrootedBtn.addEventListener('click', function() {
+        alert("Specification §117: When su binary is absent in PATH (/system/bin/su, /system/xbin/su), device runs in read-only telemetry mode.");
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]" data-active-classes="[&amp;_.nav-pill]:bg-primary-container [&amp;_.nav-pill]:text-on-primary-container [&amp;_.nav-icon]:text-on-primary-container [&amp;_.nav-label]:text-on-surface [&amp;_.nav-label]:font-medium"><div class="flex items-center justify-around h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors [&amp;_.nav-pill]:bg-primary-container [&amp;_.nav-pill]:text-on-primary-container [&amp;_.nav-icon]:text-on-primary-container [&amp;_.nav-label]:text-on-surface [&amp;_.nav-label]:font-medium" data-path="home" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">radar</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="diagnostics" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">troubleshoot</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Diagnostics</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="logs" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">terminal</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Logs</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">settings</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Settings</span></a></div></nav></body></html>

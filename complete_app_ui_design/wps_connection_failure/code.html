@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Roboto+Flex:opsz,wght@8..144,400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#001d32", "surface-variant": "#323539", "on-secondary": "#0a315b", "on-primary-container": "#005652", "status-error": "#ef5350", "on-error": "#690005", "secondary-fixed": "#d5e3ff", "surface-container-low": "#191c20", "on-primary": "#003734", "on-tertiary": "#003352", "on-secondary-fixed-variant": "#274773", "on-background": "#e1e2e8", "error-container": "#93000a", "surface-container-lowest": "#0b0e12", "tertiary": "#bbddff", "status-warning": "#ffb74d", "on-secondary-container": "#98b7e9", "tertiary-container": "#7fc4ff", "inverse-on-surface": "#2e3135", "on-surface-variant": "#bec9c7", "surface-bright": "#36393e", "secondary-container": "#274773", "surface-dim": "#111417", "surface-container-highest": "#323539", "error": "#ffb4ab", "primary-fixed": "#a4f0e9", "outline-variant": "#3f4947", "secondary": "#a9c8fb", "tertiary-fixed": "#cde5ff", "on-surface": "#e1e2e8", "secondary-fixed-dim": "#a9c8fb", "surface-base": "#191c20", "text-muted": "#8e9199", "surface-container": "#1d2024", "on-primary-fixed": "#00201e", "on-primary-fixed-variant": "#00504b", "primary": "#9ce7e0", "surface-container-high": "#272a2e", "outline": "#889391", "on-tertiary-fixed-variant": "#004b74", "inverse-primary": "#136964", "background": "#111417", "on-secondary-fixed": "#001c3b", "surface": "#111417", "primary-fixed-dim": "#89d4cd", "on-error-container": "#ffdad6", "status-success": "#4caf50", "tertiary-fixed-dim": "#94ccff", "inverse-surface": "#e1e2e8", "surface-tint": "#89d4cd", "on-tertiary-container": "#00517d", "surface-canvas": "#111318", "outline-border": "#43474e", "primary-container": "#80cbc4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-md": "0.75rem", "margin": "1rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "gutter-tablet": "1.5rem", "margin-tablet": "1.5rem", "space-lg": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": ["Roboto Flex"], "code-sm": ["JetBrains Mono"], "body-lg": ["Roboto Flex"], "body-md": ["Roboto Flex"], "title-md": ["Roboto Flex"], "label-lg": ["Roboto Flex"], "headline-lg-mobile": ["Roboto Flex"], "label-md": ["JetBrains Mono"], "title-lg": ["Roboto Flex"], "headline-md": ["Roboto Flex"], "headline-lg": ["Roboto Flex"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "code-sm": ["11px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen relative selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col w-full"><div class="h-6 px-margin flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm pt-1"><span class="font-medium text-on-surface tracking-tight">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[14px]">network_cell</span><span class="material-symbols-outlined text-[14px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Navigate back" class="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-highest/50 transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #80cbc4
+- Font: robotoFlex
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VNUHVLlCnjiChnNM46hj8_jFqi48x1GL5y8Th0D9BQNsXXHdJnoTbCIOae8EQZj9IwLTzL0gL8BYYeimlt1MOifUEbE_WrYA3em9unTT_6r90JwoYG-cbJPFsi0nQycBzs22ukxYel_hJTFPHxTuzGuMXsgN1qAjXg0F4Ff9FjyY-QuCBXw9i84LuvOkl_BJM9xowoJuWmkkPjZZRUdXhbLQNtP5NAuidX3Tfb70PykWVXMhesOf4Xdl22"/><h1 class="font-title-lg text-title-lg text-on-surface truncate">Root Access</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Close modal" class="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest/50 transition-colors"><span class="material-symbols-outlined text-[22px]">close</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex flex-col relative w-full pt-[88px] pb-10 bg-surface flex-1 px-margin"><div class="flex flex-col w-full pb-12 space-y-space-md">
+<!-- Error Status Ribbon / Header Meta Pill -->
+<div class="flex items-center justify-between px-space-xs">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container/40 text-error">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">error</span>
+<span class="font-code-sm text-code-sm font-medium tracking-wide uppercase">WSC_SESSION_TERMINATED</span>
+</div>
+<div class="flex items-center gap-1 font-code-sm text-code-sm text-text-muted">
+<span class="material-symbols-outlined text-[13px]">timer_off</span>
+<span>120s TTL Expired</span>
+</div>
+</div>
+<!-- Hero Failure Presentation (§43, §76, §114) -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-md">
+<!-- Ambient Error Accent Radiance -->
+<div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-status-error/10 blur-2xl pointer-events-none"></div>
+<div class="relative flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">wifi_off</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Connection failed</h2>
+<span class="inline-block w-2 h-2 rounded-full bg-status-error animate-pulse"></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+          The router did not complete the WPS handshake session within the expected timeframe.
+        </p>
+</div>
+</div>
+<!-- Live Telemetry Grid -->
+<div class="mt-space-lg grid grid-cols-2 gap-space-xs rounded-lg bg-surface-canvas p-space-sm text-on-surface">
+<div class="flex flex-col p-space-xs">
+<span class="font-code-sm text-code-sm text-text-muted uppercase tracking-wider">Failed Phase</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-status-error text-[15px]">sync_problem</span>
+<span class="font-label-md text-label-md font-medium text-error truncate">Step 3 of 5 · Auth</span>
+</div>
+</div>
+<div class="flex flex-col p-space-xs">
+<span class="font-code-sm text-code-sm text-text-muted uppercase tracking-wider">Target SSID</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[15px]">router</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">Netgear_Ext_Home</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Diagnostic Breakdown Card (§43, §44, §114) -->
+<section class="rounded-xl bg-surface-container p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">query_stats</span>
+        Session Breakdown
+      </h3>
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">
+        ERR_WSC_TIMEOUT
+      </span>
+</div>
+<!-- Diagnostic Step Metrics -->
+<div class="space-y-space-xs">
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-high/60">
+<span class="font-code-sm text-code-sm text-text-muted">Primary Root Cause</span>
+<p class="font-body-md text-body-md text-on-surface mt-1 font-medium">
+          M4 / M5 Handshake Timeout — Authentication rejected or timed out by AP
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-high/40">
+<span class="font-code-sm text-code-sm text-text-muted">Target BSSID</span>
+<span class="font-label-md text-label-md text-on-surface mt-0.5 font-mono">A4:22:9E:11:45:8F</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-high/40">
+<span class="font-code-sm text-code-sm text-text-muted">Session Window</span>
+<span class="font-label-md text-label-md text-error mt-0.5 font-mono">120s / 120s (Expired)</span>
+</div>
+</div>
+</div>
+<!-- Visual Sequential Timeline Tracker -->
+<div class="pt-2">
+<div class="flex items-center justify-between mb-2">
+<span class="font-code-sm text-code-sm text-text-muted uppercase tracking-wider">Protocol Pipeline</span>
+<span class="font-code-sm text-code-sm text-status-error font-medium">Stage 3 Failed</span>
+</div>
+<div class="grid grid-cols-5 gap-1.5 items-center">
+<!-- Step 1 Done -->
+<div class="flex flex-col gap-1">
+<div class="h-1.5 rounded-full bg-status-success"></div>
+<span class="font-code-sm text-[10px] leading-tight text-status-success text-center truncate">Driver</span>
+</div>
+<!-- Step 2 Done -->
+<div class="flex flex-col gap-1">
+<div class="h-1.5 rounded-full bg-status-success"></div>
+<span class="font-code-sm text-[10px] leading-tight text-status-success text-center truncate">Supplicant</span>
+</div>
+<!-- Step 3 Failed -->
+<div class="flex flex-col gap-1">
+<div class="h-1.5 rounded-full bg-status-error animate-pulse"></div>
+<span class="font-code-sm text-[10px] leading-tight text-status-error text-center truncate">M1-M4 Auth</span>
+</div>
+<!-- Step 4 Pending -->
+<div class="flex flex-col gap-1">
+<div class="h-1.5 rounded-full bg-surface-variant"></div>
+<span class="font-code-sm text-[10px] leading-tight text-text-muted text-center truncate">Handshake</span>
+</div>
+<!-- Step 5 Pending -->
+<div class="flex flex-col gap-1">
+<div class="h-1.5 rounded-full bg-surface-variant"></div>
+<span class="font-code-sm text-[10px] leading-tight text-text-muted text-center truncate">IP Lease</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Troubleshooting & Recommended Actions (§114) -->
+<section class="rounded-xl bg-surface-container p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-status-warning text-[20px]">build_circle</span>
+<h3 class="font-title-md text-title-md text-on-surface">Recommended Actions</h3>
+</div>
+<div class="space-y-space-sm">
+<!-- Tip 1 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-high/40">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 font-label-md text-label-md font-bold mt-0.5">
+          1
+        </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Verify router WPS state</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-normal">
+            Verify the physical WPS button on the router is actively blinking. The hardware PBC pairing window expires after 120 seconds.
+          </p>
+</div>
+</div>
+<!-- Tip 2 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-high/40">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 font-label-md text-label-md font-bold mt-0.5">
+          2
+        </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Inspect AP setup lock</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-normal">
+            Ensure router WPS PIN / Setup Lock is not temporarily locked due to recent consecutive attempts.
+          </p>
+</div>
+</div>
+<!-- Tip 3 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-high/40">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 font-label-md text-label-md font-bold mt-0.5">
+          3
+        </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Router firmware flood-guard</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-normal">
+            Check if access point security policies temporarily block WPS handshakes after rapid probe transactions.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Diagnostics Collapsible Panel (§44, §121) -->
+<section class="rounded-xl bg-surface-container-low shadow-sm overflow-hidden transition-all duration-200">
+<button aria-controls="tech-details-content" aria-expanded="false" class="w-full flex items-center justify-between p-space-lg text-left hover:bg-surface-container-high/50 transition-colors" id="tech-toggle-btn" onclick="
+        const panel = document.getElementById('tech-details-content');
+        const icon = document.getElementById('tech-toggle-icon');
+        const isCollapsed = panel.classList.contains('hidden');
+        if (isCollapsed) {
+          panel.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        } else {
+          panel.classList.add('hidden');
+          icon.style.transform = 'rotate(0deg)';
+        }
+      ">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Technical Details</span>
+<span class="font-code-sm text-code-sm text-text-muted">Supplicant trace &amp; socket telemetry</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-highest text-primary">Exit: 1</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200 text-[20px]" id="tech-toggle-icon">expand_more</span>
+</div>
+</button>
+<div class="hidden px-space-lg pb-space-lg pt-space-xs space-y-space-md" id="tech-details-content">
+<!-- Metainfo Rows -->
+<div class="grid grid-cols-1 gap-space-xs bg-surface-canvas p-space-sm rounded-lg font-code-sm text-code-sm text-on-surface">
+<div class="flex justify-between items-center py-1">
+<span class="text-text-muted">Internal State:</span>
+<span class="text-secondary font-medium">WPS_STATE_AUTHENTICATING</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-text-muted">Exit Code:</span>
+<span class="text-status-error font-medium">1 (WSC_NACK_RECEIVED)</span>
+</div>
+<div class="flex flex-col py-1">
+<span class="text-text-muted mb-0.5">Invoked Interface:</span>
+<span class="text-on-surface-variant font-mono break-all bg-surface-container-lowest px-2 py-1 rounded text-[10px]">
+            wpa_cli -i wlan0 wps_pbc A4:22:9E:11:45:8F
+          </span>
+</div>
+</div>
+<!-- Sanitized Console Log Output (§44, §121) -->
+<div class="flex flex-col space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-text-muted flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-error"></span>
+            Raw Supplicant Capture
+          </span>
+<span class="font-code-sm text-[10px] text-text-muted">Sanitized / No Key Leakage</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm font-code-sm text-code-sm leading-relaxed overflow-x-auto text-on-surface-variant shadow-inner select-text">
+<div class="text-text-muted mb-0.5">// wpa_supplicant v2.10-devel socket dump</div>
+<div class="text-status-error">[16:44:12.802] &lt;3&gt;WPS-FAIL msg=7 config_error=18 (Session overlap / AP lockout)</div>
+<div class="text-status-warning">[16:44:12.804] wpa_supplicant: EAP-WSC NACK received from authenticator</div>
+<div class="text-text-muted">[16:44:12.850] Deauthenticating from A4:22:9E:11:45:8F (Reason: 2=PREV_AUTH_NOT_VALID)</div>
+</div>
+</div>
+<!-- Copy Technical Report Action -->
+<button class="w-full h-11 min-h-[44px] rounded-lg bg-surface-container-high text-primary hover:bg-surface-container-highest font-label-md text-label-md flex items-center justify-center gap-2 transition-colors active:scale-[0.99]" id="copy-report-btn" onclick="
+          const copyBtn = document.getElementById('copy-report-btn');
+          const originalContent = copyBtn.innerHTML;
+          navigator.clipboard.writeText('Netgear_Ext_Home [A4:22:9E:11:45:8F] | Error: M4/M5 Timeout | Exit: 1 (WSC_NACK_RECEIVED) | Config_Error=18');
+          copyBtn.innerHTML = '&lt;span class=\'material-symbols-outlined text-[16px]\'&gt;check&lt;/span&gt; Report Copied';
+          copyBtn.classList.add('text-status-success');
+          setTimeout(() =&gt; {
+            copyBtn.innerHTML = originalContent;
+            copyBtn.classList.remove('text-status-success');
+          }, 2000);
+        ">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+        Copy Technical Report
+      </button>
+</div>
+</section>
+<!-- Persistent Outcome Action Buttons (§43, §45, §84) -->
+<section class="pt-space-xs space-y-space-sm">
+<!-- Primary CTA -->
+<button class="w-full h-12 min-h-[48px] rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-md hover:brightness-105 active:scale-[0.98] transition-all" onclick="this.classList.add('opacity-80'); setTimeout(() =&gt; { window.location.reload(); }, 300);">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+      Retry WPS Connection
+    </button>
+<!-- Secondary Outlined Button -->
+<button class="w-full h-12 min-h-[48px] rounded-xl bg-surface-container-high text-secondary hover:bg-surface-container-highest font-label-lg text-label-lg flex items-center justify-center gap-2 transition-colors active:scale-[0.98]" onclick="
+        const panel = document.getElementById('tech-details-content');
+        const icon = document.getElementById('tech-toggle-icon');
+        panel.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+        panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      ">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+      Inspect Socket Diagnostics
+    </button>
+<!-- Tertiary Action -->
+<button class="w-full h-11 min-h-[44px] rounded-xl bg-transparent text-text-muted hover:text-on-surface hover:bg-surface-container-low font-label-lg text-label-lg flex items-center justify-center transition-colors" onclick="history.back()">
+      Cancel &amp; Return to Home
+    </button>
+</section>
+</div></main><footer class="fixed bottom-0 left-0 right-0 z-50 pointer-events-none pb-safe"><div class="w-full flex justify-center items-center py-2"><div class="w-32 h-1 bg-on-surface-variant/40 rounded-full"></div></div></footer></body></html>

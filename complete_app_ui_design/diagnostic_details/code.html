@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Roboto+Flex:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#005652","on-background":"#e1e2e8","outline-variant":"#3f4947","surface-base":"#191c20","surface-container-highest":"#323539","on-surface-variant":"#bec9c7","inverse-surface":"#e1e2e8","surface-variant":"#323539","error-container":"#93000a","on-secondary-fixed":"#001c3b","tertiary-container":"#7fc4ff","tertiary-fixed":"#cde5ff","on-secondary-container":"#98b7e9","surface-bright":"#36393e","on-secondary":"#0a315b","secondary-container":"#274773","on-primary-fixed-variant":"#00504b","status-success":"#4caf50","secondary-fixed-dim":"#a9c8fb","primary-fixed":"#a4f0e9","on-tertiary-fixed-variant":"#004b74","surface-container-high":"#282c34","on-error":"#690005","background":"#111417","on-secondary-fixed-variant":"#274773","on-primary":"#003734","surface-dim":"#111417","inverse-on-surface":"#2e3135","on-surface":"#e1e2e8","outline":"#889391","on-tertiary":"#003352","surface":"#111417","outline-border":"#43474e","surface-container-lowest":"#0b0e12","surface-tint":"#89d4cd","surface-canvas":"#111318","error":"#ffb4ab","text-muted":"#8e9199","surface-container-low":"#191c20","primary-container":"#80cbc4","on-tertiary-fixed":"#001d32","status-warning":"#ffb74d","surface-container":"#1d2024","on-error-container":"#ffdad6","inverse-primary":"#136964","status-error":"#ef5350","secondary":"#a9c8fb","primary":"#9ce7e0","secondary-fixed":"#d5e3ff","primary-fixed-dim":"#89d4cd","on-primary-fixed":"#00201e","tertiary-fixed-dim":"#94ccff","tertiary":"#bbddff","on-tertiary-container":"#00517d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"1.5rem","gutter-tablet":"1.5rem","space-md":"0.75rem","space-sm":"0.5rem","margin":"1rem","gutter":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem","space-lg":"1rem"},"fontFamily":{"title-lg":["Roboto Flex"],"code-sm":["JetBrains Mono"],"label-lg":["Roboto Flex"],"body-lg":["Roboto Flex"],"headline-md":["Roboto Flex"],"headline-lg":["Roboto Flex"],"label-md":["JetBrains Mono"],"body-sm":["Roboto Flex"],"title-md":["Roboto Flex"],"body-md":["Roboto Flex"],"headline-lg-mobile":["Roboto Flex"]},"fontSize":{"title-lg":["20px",{"lineHeight":"28px","fontWeight":"500"}],"code-sm":["11px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe"><div class="flex items-center justify-between px-margin h-6 select-none text-on-surface-variant font-label-md text-label-md"><span class="tracking-tight font-medium">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Navigate back" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:text-primary active:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-lg text-title-lg text-on-surface font-medium truncate tracking-normal">Active Wps Session</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Interactive Action Header Strip -->
+<div class="px-margin pt-space-xs pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-status-warning animate-pulse"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant uppercase tracking-wider">SUBSYSTEM TELEMETRY</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Refresh probe metrics" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full text-on-surface-variant active:bg-surface-container-high transition-colors" id="refreshProbeBtn">
+<span class="material-symbols-outlined text-[20px] transition-transform" id="refreshIcon">sync</span>
+</button>
+<button aria-label="Copy subsystem snapshot" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full text-on-surface-variant active:bg-surface-container-high transition-colors" id="copySummaryBtn">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+<button aria-label="Share diagnostics" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full text-on-surface-variant active:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<div class="px-margin flex flex-col gap-space-md">
+<!-- Subsystem Status Banner -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-status-warning"></div>
+<div class="pl-space-xs flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">settings_ethernet</span>
+<span class="font-title-md text-title-md text-on-surface">wpa_supplicant control interface</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-warning/15 text-status-warning font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>[!] LIMITED</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+          Control socket reachable via fallback pipe, but vendor SELinux policy restricts direct userland UNIX domain socket binding.
+        </p>
+<div class="flex items-center gap-space-xs text-text-muted font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Probe cycle completed 42ms ago • Socket UID: 1010</span>
+</div>
+</div>
+</div>
+<!-- Parameter Telemetry Grid -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Key Parameters</span>
+<span class="font-code-sm text-code-sm text-primary">IOCTL_READY</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Row 1: Detected Path -->
+<div class="bg-surface-container-high rounded-lg p-space-sm flex flex-col gap-1 sm:col-span-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Detected Path</span>
+<span class="font-code-sm text-code-sm text-secondary break-all">/data/vendor/wifi/wpa/sockets/wlan0</span>
+</div>
+<!-- Row 2: Accessible -->
+<div class="bg-surface-container-high rounded-lg p-space-sm flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Socket Access</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-status-warning"></span>
+<span class="font-label-md text-label-md text-status-warning">Restricted (Root Required)</span>
+</div>
+</div>
+<!-- Row 3: Interface Binding -->
+<div class="bg-surface-container-high rounded-lg p-space-sm flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Interface Binding</span>
+<span class="font-label-md text-label-md text-on-surface">wlan0 <span class="text-text-muted">(802.11 b/g/n/ac)</span></span>
+</div>
+<!-- Row 4: Daemon PID -->
+<div class="bg-surface-container-high rounded-lg p-space-sm flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Daemon PID</span>
+<span class="font-code-sm text-code-sm text-on-surface">1148 <span class="text-text-muted">(system_server)</span></span>
+</div>
+<!-- Row 5: Binary Version -->
+<div class="bg-surface-container-high rounded-lg p-space-sm flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Binary Version</span>
+<span class="font-code-sm text-code-sm text-primary">wpa_cli v2.10-devel</span>
+</div>
+<!-- Row 6: Last Exit Code -->
+<div class="bg-surface-container-high rounded-lg p-space-sm flex flex-col gap-1 sm:col-span-2">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last Native Exit Code</span>
+<span class="font-code-sm text-code-sm text-status-error font-medium">Exit 13 (EACCES)</span>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">Permission denied on connect() syscall via /dev/socket</span>
+</div>
+</div>
+</div>
+<!-- Deep Investigation & Root Cause Section -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">policy</span>
+<h2 class="font-title-md text-title-md text-on-surface">Root Cause Analysis</h2>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-body-sm text-body-sm text-text-muted uppercase tracking-wider">Bottleneck Vector</span>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest text-status-warning font-code-sm text-code-sm break-all">
+          avc: denied { connectto } for path="/data/vendor/wifi/wpa/sockets/wlan0" scontext=u:r:untrusted_app:s0:c153,c256,c512,c768 tcontext=u:r:hal_wifi_supplicant_default:s0
+        </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Modern Android versions (API 31+) enforce strict <code class="font-code-sm text-code-sm text-primary bg-surface-container-high px-1.5 py-0.5 rounded">neverallow</code> rules on standard userland and non-privileged application contexts attempting direct domain socket connections to vendor trees.
+      </p>
+<!-- Safety & Non-destructive note -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-lg text-label-lg text-primary">Isolated Sandbox Guarantee (§119)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            The application uses isolated su command injection (<code class="font-code-sm text-code-sm text-on-surface">wpa_cli -p ...</code>) to bypass this restriction safely without altering system partitions or modifying global SELinux state.
+          </p>
+</div>
+</div>
+</div>
+<!-- Interactive Diagnostic Command Probe Console -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+<span class="font-title-md text-title-md text-on-surface">Active Command Probes</span>
+</div>
+<button class="min-h-[48px] px-3 flex items-center gap-1.5 text-secondary font-label-md text-label-md active:bg-surface-container-high rounded-full transition-colors" id="copyConsoleBtn">
+<span class="material-symbols-outlined text-[16px]">copy_all</span>
+<span>Copy Stream</span>
+</button>
+</div>
+<div class="bg-surface-canvas rounded-lg p-space-md font-code-sm text-code-sm flex flex-col gap-1 overflow-x-auto selection:bg-primary selection:text-on-primary" id="terminalBody">
+<div class="text-text-muted select-none"># Supplicant probing daemon initialized (pid 24099)</div>
+<div class="flex items-start gap-2 text-on-surface">
+<span class="text-primary select-none">$</span>
+<span>su -c "wpa_cli -i wlan0 ping"</span>
+</div>
+<div class="text-status-success pl-3">&gt; PONG</div>
+<div class="flex items-start gap-2 text-on-surface pt-1">
+<span class="text-primary select-none">$</span>
+<span>su -c "wpa_cli -i wlan0 status"</span>
+</div>
+<div class="text-on-surface-variant pl-3">&gt; wpa_state=COMPLETED</div>
+<div class="text-on-surface-variant pl-3">&gt; bssid=a4:22:9e:11:45:8f</div>
+<div class="text-on-surface-variant pl-3">&gt; ssid=Netgear_Ext_Home</div>
+<div class="text-on-surface-variant pl-3">&gt; id=0</div>
+<div class="text-on-surface-variant pl-3">&gt; pairwise_cipher=CCMP</div>
+<div class="text-status-success pl-3">&gt; supplicant_pipe_latency=18.4ms [NOMINAL]</div>
+</div>
+</div>
+<!-- Recommended Remediations / Next Steps -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">checklist</span>
+<h2 class="font-title-md text-title-md text-on-surface">Recommended Actions (§114)</h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Step 1 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-high">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 font-label-md text-label-md mt-0.5">
+            1
+          </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Verify Root Daemon</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ensure Magisk / KernelSU grant is active with IPC roundtrip latency verified under 50ms.</span>
+</div>
+<span class="material-symbols-outlined text-status-success text-[18px] shrink-0">check_circle</span>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-high">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 font-label-md text-label-md mt-0.5">
+            2
+          </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Use Supplicant Proxy</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">The built-in socket proxy adapter is recommended for this Qualcomm vendor device tree.</span>
+</div>
+<span class="material-symbols-outlined text-status-warning text-[18px] shrink-0">pending</span>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-high">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 font-label-md text-label-md mt-0.5">
+            3
+          </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Check Vendor Hooks</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">No manual action required; fallback handler will route WPS operations via privileged shell.</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">auto_fix_high</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Primary Action -->
+<button class="min-h-[48px] px-space-lg rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs active:opacity-90 shadow-sm transition-transform active:scale-[0.99]" id="rerunProbeBtn">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+<span>Re-run Interface Probe</span>
+</button>
+<!-- Secondary Action -->
+<button class="min-h-[48px] px-space-lg rounded-full bg-surface-container-high text-secondary font-label-lg text-label-lg flex items-center justify-center gap-space-xs active:bg-surface-bright transition-colors" id="copyDumpBtn">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+<span>Copy Full Diagnostic Dump</span>
+</button>
+<!-- Sublink Link -->
+<a class="min-h-[48px] flex items-center justify-center gap-1 text-primary font-label-md text-label-md active:underline pt-1" href="#system-logs">
+<span>View Related System Logs</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Toast Notification Banner -->
+<div class="fixed bottom-6 inset-x-margin max-w-sm mx-auto bg-surface-bright text-on-surface px-space-md py-space-sm rounded-lg shadow-xl flex items-center justify-between gap-space-sm transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none z-50" id="toastNotification">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" id="toastIcon">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toastMessage">Dump copied to clipboard</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const rerunBtn = document.getElementById('rerunProbeBtn');
+    const refreshBtn = document.getElementById('refreshProbeBtn');
+    const refreshIcon = document.getElementById('refreshIcon');
+    const copyDumpBtn = document.getElementById('copyDumpBtn');
+    const copyConsoleBtn = document.getElementById('copyConsoleBtn');
+    const copySummaryBtn = document.getElementById('copySummaryBtn');
+    const terminal = document.getElementById('terminalBody');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+
+    let toastTimeout = null;
+
+    function showToast(text, isWarning = false) {
+      if (!toast) return;
+      clearTimeout(toastTimeout);
+      toastMsg.textContent = text;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 2600);
+    }
+
+    function triggerProbeRun() {
+      if (refreshIcon) {
+        refreshIcon.classList.add('animate-spin');
+      }
+
+      showToast('Dispatching sanitized probe sequence...');
+
+      setTimeout(() => {
+        if (refreshIcon) {
+          refreshIcon.classList.remove('animate-spin');
+        }
+
+        const now = new Date();
+        const timeStr = now.toTimeString().split(' ')[0] + '.' + String(now.getMilliseconds()).padStart(3, '0');
+
+        const probeResult = document.createElement('div');
+        probeResult.className = 'flex flex-col gap-0.5 pt-2 text-on-surface border-t border-surface-container-high/50';
+        probeResult.innerHTML = `
+          <div class="text-text-muted select-none"># Probe completed at ${timeStr}</div>
+          <div class="flex items-start gap-2 text-on-surface">
+            <span class="text-primary select-none">$</span>
+            <span>su -c "wpa_cli -i wlan0 get_capability channels"</span>
+          </div>
+          <div class="text-on-surface-variant pl-3">&gt; Channels: 1 2 3 4 5 6 7 8 9 10 11 36 40 44 48 149 153 157 161</div>
+          <div class="text-status-success pl-3">&gt; Driver state: CONNECTED [Latency 14.1ms]</div>
+        `;
+
+        if (terminal) {
+          terminal.appendChild(probeResult);
+          terminal.scrollTop = terminal.scrollHeight;
+        }
+
+        showToast('Probe execution completed successfully');
+      }, 750);
+    }
+
+    if (rerunBtn) rerunBtn.addEventListener('click', triggerProbeRun);
+    if (refreshBtn) refreshBtn.addEventListener('click', triggerProbeRun);
+
+    if (copyDumpBtn) {
+      copyDumpBtn.addEventListener('click', () => {
+        const dump = [
+          '=== WPA_SUPPLICANT DIAGNOSTIC SNAPSHOT (§57) ===',
+          'Path: /data/vendor/wifi/wpa/sockets/wlan0',
+          'Access: Restricted (Root Required)',
+          'Daemon: system_server (PID 1148)',
+          'SELinux: avc: denied { connectto }',
+          'Resolution Strategy: Fallback su-injection proxy (§119)',
+          'Status: wpa_state=COMPLETED, SSID=Netgear_Ext_Home',
+          'BSSID: a4:22:9e:11:45:8f'
+        ].join('\n');
+
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(dump).then(() => {
+            showToast('Full diagnostic dump copied');
+          }).catch(() => {
+            showToast('Failed to write to clipboard');
+          });
+        } else {
+          showToast('Diagnostic dump prepared in memory');
+        }
+      });
+    }
+
+    if (copyConsoleBtn && terminal) {
+      copyConsoleBtn.addEventListener('click', () => {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(terminal.innerText).then(() => {
+            showToast('Probe terminal output copied');
+          });
+        }
+      });
+    }
+
+    if (copySummaryBtn) {
+      copySummaryBtn.addEventListener('click', () => {
+        showToast('Telemetry parameters captured');
+      });
+    }
+  })();
+</script></main></body></html>

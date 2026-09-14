@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">WPS/A Tester</string>
+
+    <!-- Navigation -->
+    <string name="nav_networks">Networks</string>
+    <string name="nav_diagnostics">Diagnostics</string>
+    <string name="nav_logs">Logs</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Wi-Fi Scanner Screen -->
+    <string name="wifi_wps_scanner">WPS/A Tester Scanner</string>
+    <string name="scanning">Scanning…</string>
+    <string name="filter">Filter</string>
+    <string name="refresh">Refresh</string>
+    <string name="scan">Scan</string>
+    <string name="scan_button">SCAN</string>
+    <string name="wifi_off">Wi-Fi Off</string>
+    <string name="wifi_is_disabled">Wi-Fi is disabled</string>
+    <string name="enable_wifi_to_scan">Enable Wi-Fi to scan for networks</string>
+    <string name="enable_wifi">Enable Wi-Fi</string>
+    <string name="wifi_must_be_enabled">Wi-Fi must be enabled to scan for networks</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="show_only_wps_networks">Show only WPS networks</string>
+    <string name="sort_by">Sort by:</string>
+    <string name="networks_found">Networks found: %d</string>
+    <string name="wps_count">WPS: %d</string>
+    <string name="channel_short">Ch %d</string>
+    <string name="wps_locked">WPS LOCKED</string>
+    <string name="wps">WPS</string>
+    <string name="band_2_4_ghz">2.4 GHz</string>
+    <string name="band_5_ghz">5 GHz</string>
+    <string name="band_6_ghz">6 GHz</string>
+    <string name="signal_strength">Signal strength</string>
+    <string name="scanning_for_networks">Scanning for nearby networks…</string>
+    <string name="no_networks_found">No networks found</string>
+    <string name="sort_signal">Signal</string>
+    <string name="sort_name">Name</string>
+    <string name="sort_channel">Channel</string>
+    <string name="sort_security">Security</string>
+
+    <!-- Network Detail Screen -->
+    <string name="network_details">Network Details</string>
+    <string name="back">Back</string>
+    <string name="wps_connection_methods">WPS Connection Methods</string>
+    <string name="standard_wps">Push Button Configuration (PBC)</string>
+    <string name="standard_wps_description">Press the physical WPS button on your authorized router</string>
+    <string name="pin_wps">WPS PIN Authentication</string>
+    <string name="pin_wps_description">Enter the legitimate WPS PIN supplied by your router</string>
+    <string name="warning_legal">Authorized testing utility only. Test only networks you own or have explicit administrative permission to test.</string>
+    <string name="label_bssid">BSSID</string>
+    <string name="label_signal">Signal</string>
+    <string name="label_channel">Channel</string>
+    <string name="label_security">Security</string>
+    <string name="label_vendor">Vendor</string>
+    <string name="label_band">Band</string>
+    <string name="unknown">Unknown</string>
+    <string name="wps_not_available">WPS Not Available</string>
+    <string name="wps_available">WPS Available</string>
+    <string name="supported_methods">Supported: %s</string>
+    <string name="method_pbc">PBC</string>
+    <string name="method_pin">PIN</string>
+    <string name="signal_dbm_format">%d dBm</string>
+    <string name="signal_strength_format">%1$d dBm (%2$s)</string>
+    <string name="channel_frequency_format">%1$d (%2$d MHz)</string>
+
+    <!-- Connection Progress Screen -->
+    <string name="wps_connection">WPS Connection</string>
+    <string name="cancel">Cancel</string>
+    <string name="stop">Stop</string>
+    <string name="done">Done</string>
+    <string name="close">Close</string>
+    <string name="retry">Retry</string>
+    <string name="connected_successfully">Connected Successfully!</string>
+    <string name="connection_failed">Connection Failed</string>
+    <string name="connection_cancelled">Connection Cancelled</string>
+    <string name="open_wifi_settings">Open Wi-Fi Settings</string>
+    <string name="initializing">Initializing…</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_share">Share</string>
+    <string name="result_copied">Copied to clipboard</string>
+
+    <!-- Permission Screen -->
+    <string name="permissions_required">Permissions Required</string>
+    <string name="wifi_scanner_permissions">Wi-Fi Scanner Permissions</string>
+    <string name="location_services_disabled">Location Services Disabled</string>
+    <string name="enable_location_for_wifi">Enable location services for Wi-Fi scanning</string>
+    <string name="grant_permissions">Grant Permissions</string>
+    <string name="open_app_settings">Open App Settings</string>
+    <string name="permission_info_message">These permissions are required by the Android operating system to discover nearby Wi-Fi access points. WPS/A Tester uses them strictly for authorized network validation.</string>
+
+    <!-- Root Access Messages -->
+    <string name="root_required_title">Root Access Required</string>
+    <string name="root_required_description">WPS/A Tester requires root access to communicate directly with wpa_supplicant control interfaces because modern Android restricts standard Wi-Fi management APIs.</string>
+    <string name="root_required_message">Root access is required for WPS operations</string>
+</resources>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Roboto+Flex:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#005652","on-background":"#e1e2e8","outline-variant":"#3f4947","surface-base":"#191c20","surface-container-highest":"#323539","on-surface-variant":"#bec9c7","inverse-surface":"#e1e2e8","surface-variant":"#323539","error-container":"#93000a","on-secondary-fixed":"#001c3b","tertiary-container":"#7fc4ff","tertiary-fixed":"#cde5ff","on-secondary-container":"#98b7e9","surface-bright":"#36393e","on-secondary":"#0a315b","secondary-container":"#274773","on-primary-fixed-variant":"#00504b","status-success":"#4caf50","secondary-fixed-dim":"#a9c8fb","primary-fixed":"#a4f0e9","on-tertiary-fixed-variant":"#004b74","surface-container-high":"#282c34","on-error":"#690005","background":"#111417","on-secondary-fixed-variant":"#274773","on-primary":"#003734","surface-dim":"#111417","inverse-on-surface":"#2e3135","on-surface":"#e1e2e8","outline":"#889391","on-tertiary":"#003352","surface":"#111417","outline-border":"#43474e","surface-container-lowest":"#0b0e12","surface-tint":"#89d4cd","surface-canvas":"#111318","error":"#ffb4ab","text-muted":"#8e9199","surface-container-low":"#191c20","primary-container":"#80cbc4","on-tertiary-fixed":"#001d32","status-warning":"#ffb74d","surface-container":"#1d2024","on-error-container":"#ffdad6","inverse-primary":"#136964","status-error":"#ef5350","secondary":"#a9c8fb","primary":"#9ce7e0","secondary-fixed":"#d5e3ff","primary-fixed-dim":"#89d4cd","on-primary-fixed":"#00201e","tertiary-fixed-dim":"#94ccff","tertiary":"#bbddff","on-tertiary-container":"#00517d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"1.5rem","gutter-tablet":"1.5rem","space-md":"0.75rem","space-sm":"0.5rem","margin":"1rem","gutter":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem","space-lg":"1rem"},"fontFamily":{"title-lg":["Roboto Flex"],"code-sm":["JetBrains Mono"],"label-lg":["Roboto Flex"],"body-lg":["Roboto Flex"],"headline-md":["Roboto Flex"],"headline-lg":["Roboto Flex"],"label-md":["JetBrains Mono"],"body-sm":["Roboto Flex"],"title-md":["Roboto Flex"],"body-md":["Roboto Flex"],"headline-lg-mobile":["Roboto Flex"]},"fontSize":{"title-lg":["20px",{"lineHeight":"28px","fontWeight":"500"}],"code-sm":["11px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe"><div class="flex items-center justify-between px-margin h-6 select-none text-on-surface-variant font-label-md text-label-md"><span class="tracking-tight font-medium">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0 flex-1"><span class="material-symbols-outlined text-primary text-[24px]">cell_tower</span><h1 class="font-title-lg text-title-lg text-on-surface font-medium truncate tracking-normal">Diagnostics</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full relative">
+<!-- Underlay Scanner Context (Mocked Behind Modal Scrim) -->
+<div aria-hidden="true" class="w-full px-margin opacity-35 filter blur-[1px] pointer-events-none select-none">
+<!-- Scanner Bar Stat -->
+<div class="flex items-center justify-between py-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs text-text-muted font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">sensors</span>
+<span>INTERFACE: wlan0 (MON-READY)</span>
+</div>
+<span class="font-label-md text-label-md text-status-success">14 BSSIDs FOUND</span>
+</div>
+<!-- Active Target Network Card Underlay -->
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-md mb-space-md">
+<div class="flex items-start justify-between">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">wifi_tethering</span>
+<span class="font-title-md text-title-md text-on-surface font-medium truncate">Netgear_Ext_Home</span>
+</div>
+<div class="font-code-sm text-code-sm text-text-muted tracking-wider">A4:22:9E:11:45:8F</div>
+</div>
+<span class="bg-surface-container-highest text-status-success font-code-sm text-code-sm px-2 py-0.5 rounded-full">-62 dBm</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-sm">
+<span class="bg-surface-base text-text-muted font-code-sm text-code-sm px-2 py-0.5 rounded">WPA2-Personal</span>
+<span class="bg-surface-base text-primary font-code-sm text-code-sm px-2 py-0.5 rounded">WPS 2.0 (PBC, PIN)</span>
+<span class="bg-surface-base text-text-muted font-code-sm text-code-sm px-2 py-0.5 rounded">CH 6 (2.437 GHz)</span>
+</div>
+</div>
+<!-- Additional Ambient Scanned Row -->
+<div class="bg-surface-container-low rounded-xl p-space-md opacity-40">
+<div class="flex justify-between items-center">
+<div>
+<div class="font-title-md text-title-md text-on-surface truncate">NET_ORBI_5G_OFFICE</div>
+<div class="font-code-sm text-code-sm text-text-muted">C8:3A:35:89:12:40</div>
+</div>
+<span class="text-text-muted font-code-sm text-code-sm">-78 dBm</span>
+</div>
+</div>
+</div>
+<!-- Dimmer Scrim Background Overlay -->
+<div class="fixed inset-0 bg-surface-canvas/75 backdrop-blur-[2px] z-10 pointer-events-none"></div>
+<!-- Material 3 Bottom Sheet Modal Container -->
+<div class="relative z-20 w-full flex flex-col bg-surface-container-low rounded-t-[28px] shadow-2xl pt-space-sm pb-space-lg px-margin max-w-md mx-auto">
+<!-- Drag Handle / Grab Bar -->
+<div class="w-full flex items-center justify-center pt-1 pb-space-sm">
+<div class="w-8 h-1 rounded-full bg-outline-border"></div>
+</div>
+<!-- Sheet Header -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<button aria-label="Cancel and dismiss modal" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" id="btn-close-sheet" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="min-w-0">
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold truncate leading-tight">Connect using WPS</h2>
+<div class="flex items-center gap-space-xs mt-0.5 text-text-muted font-label-md text-code-sm truncate">
+<span class="inline-block w-2 h-2 rounded-full bg-status-success shrink-0"></span>
+<span class="text-on-surface font-medium">Netgear_Ext_Home</span>
+<span>•</span>
+<span class="font-code-sm">Ch 6 (2.4 GHz)</span>
+</div>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0" title="WPS 2.0 Certified">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+<!-- Authorization Disclaimer Banner -->
+<div class="bg-surface-container rounded-lg p-space-sm my-space-xs flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-status-warning text-[18px] shrink-0">shield_lock</span>
+<p class="font-body-sm text-body-sm text-text-muted leading-tight">
+        Authorized networks only. Only audit routers you own or operate with explicit diagnostic permissions.
+      </p>
+</div>
+<!-- Method Selection: Segmented Control Tabs (§33) -->
+<div aria-label="WPS Connection Method" class="grid grid-cols-2 p-1 bg-surface-container-highest rounded-xl my-space-sm" role="tablist">
+<button aria-selected="false" class="flex items-center justify-center gap-space-xs py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant transition-all" id="tab-pbc" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">radio_button_checked</span>
+<span>Push Button</span>
+</button>
+<button aria-selected="true" class="flex items-center justify-center gap-space-xs py-2 rounded-lg font-label-lg text-label-lg bg-surface-container-low text-primary shadow-sm transition-all font-medium" id="tab-pin" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">pin</span>
+<span>PIN Entry</span>
+</button>
+</div>
+<!-- TAB 1: Push Button View (Hidden by default) -->
+<div class="hidden flex-col gap-space-sm py-space-sm" id="content-pbc">
+<div class="bg-surface-container rounded-xl p-space-md text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-space-sm animate-pulse">
+<span class="material-symbols-outlined text-[28px]">wifi_protected_setup</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Press Physical Router Button</h3>
+<p class="font-body-sm text-body-sm text-text-muted max-w-xs mb-space-sm">
+          Press the physical or virtual WPS button on the Netgear router within the discovery window.
+        </p>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-highest text-status-warning font-label-md text-code-sm">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>120-second active association window</span>
+</div>
+</div>
+</div>
+<!-- TAB 2: PIN Entry View (Active by default, §35-36) -->
+<div class="flex flex-col gap-space-xs" id="content-pin">
+<!-- Guidance & Security Notice -->
+<div class="flex items-center justify-between text-text-muted px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Router device label PIN</span>
+<span class="font-code-sm text-code-sm text-text-muted">Standard 8-Digit</span>
+</div>
+<!-- 8-Digit Segmented PIN Cell Display [ 1 2 3 4 ] - [ 5 6 7 0 ] -->
+<div class="bg-surface-container rounded-xl p-space-sm my-space-xs">
+<div class="flex items-center justify-center gap-1 sm:gap-space-xs" id="pin-cells-wrapper">
+<!-- First 4 Digits -->
+<div class="pin-cell w-9 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-[20px] text-primary transition-all select-none" data-index="0">1</div>
+<div class="pin-cell w-9 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-[20px] text-primary transition-all select-none" data-index="1">2</div>
+<div class="pin-cell w-9 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-[20px] text-primary transition-all select-none" data-index="2">3</div>
+<div class="pin-cell w-9 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-[20px] text-primary transition-all select-none" data-index="3">4</div>
+<!-- Mid Separator -->
+<div class="w-3 flex items-center justify-center text-text-muted font-bold select-none text-body-lg">
+<span>-</span>
+</div>
+<!-- Last 4 Digits -->
+<div class="pin-cell w-9 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-[20px] text-primary transition-all select-none" data-index="4">5</div>
+<div class="pin-cell w-9 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-[20px] text-primary transition-all select-none" data-index="5">6</div>
+<div class="pin-cell w-9 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-[20px] text-primary transition-all select-none" data-index="6">7</div>
+<div class="pin-cell w-9 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-[20px] text-primary transition-all select-none" data-index="7">0</div>
+</div>
+<!-- Checksum & Protocol Status Badge -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between px-1">
+<div class="flex items-center gap-space-xs text-status-success font-label-md text-code-sm" id="checksum-status">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span id="checksum-text">Valid 8-digit checksum (Luhn/WPS)</span>
+</div>
+<button class="text-text-muted hover:text-on-surface font-label-md text-code-sm flex items-center gap-0.5 transition-colors" id="btn-quick-clear" type="button">
+<span class="material-symbols-outlined text-[13px]">refresh</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+<!-- Security Guardrail Note (§33) -->
+<div class="flex items-center gap-space-xs px-1 text-text-muted">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<p class="font-body-sm text-code-sm text-text-muted leading-none">
+          Automated brute-forcing disabled by driver security profile.
+        </p>
+</div>
+<!-- Tactile Virtual Numeric Keypad (§35–36, §110) -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-sm pb-1 select-none" id="numeric-keypad">
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="1" type="button">1</button>
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="2" type="button">2</button>
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="3" type="button">3</button>
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="4" type="button">4</button>
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="5" type="button">5</button>
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="6" type="button">6</button>
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="7" type="button">7</button>
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="8" type="button">8</button>
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="9" type="button">9</button>
+<button aria-label="Clear All Digits" class="key-btn h-12 rounded-xl bg-surface-container text-text-muted font-label-md text-code-sm flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="clear" type="button">CLR</button>
+<button class="key-btn h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-[18px] flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="0" type="button">0</button>
+<button aria-label="Backspace" class="key-btn h-12 rounded-xl bg-surface-container text-on-surface-variant font-label-md flex items-center justify-center active:bg-surface-container-highest transition-colors active:scale-95" data-key="backspace" type="button">
+<span class="material-symbols-outlined text-[20px]">backspace</span>
+</button>
+</div>
+</div>
+<!-- Action Buttons Bar (§36, §84) -->
+<div class="flex flex-col gap-space-xs mt-space-sm">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md active:opacity-90 active:scale-[0.99] transition-all" id="btn-submit-action" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">lock_open</span>
+<span id="submit-btn-label">Connect with PIN</span>
+</button>
+<button class="w-full h-10 rounded-xl bg-transparent text-text-muted hover:text-on-surface font-label-lg text-label-lg flex items-center justify-center transition-colors" id="btn-cancel-action" type="button">
+        Cancel Session
+      </button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let pinDigits = ['1', '2', '3', '4', '5', '6', '7', '0'];
+    let activeMethod = 'pin';
+
+    const cellsWrapper = document.getElementById('pin-cells-wrapper');
+    const cells = cellsWrapper ? cellsWrapper.querySelectorAll('.pin-cell') : [];
+    const checksumStatus = document.getElementById('checksum-status');
+    const checksumText = document.getElementById('checksum-text');
+    const submitBtnLabel = document.getElementById('submit-btn-label');
+    const btnSubmit = document.getElementById('btn-submit-action');
+
+    const tabPin = document.getElementById('tab-pin');
+    const tabPbc = document.getElementById('tab-pbc');
+    const contentPin = document.getElementById('content-pin');
+    const contentPbc = document.getElementById('content-pbc');
+
+    // Luhn/WPS checksum calculation
+    function computeWpsChecksum(pinStr) {
+      if (pinStr.length !== 8) return false;
+      let accum = 0;
+      const digits = pinStr.split('').map(Number);
+      accum += 3 * (digits[0] + digits[2] + digits[4] + digits[6]);
+      accum += 1 * (digits[1] + digits[3] + digits[5] + digits[7]);
+      return (accum % 10) === 0;
+    }
+
+    function renderPinState() {
+      if (!cells.length) return;
+      const currentPin = pinDigits.join('');
+
+      cells.forEach((cell, idx) => {
+        const val = pinDigits[idx];
+        cell.textContent = val !== undefined ? val : '';
+        if (idx === pinDigits.length && pinDigits.length < 8) {
+          // Active blinking cursor style
+          cell.classList.add('bg-surface-container-highest', 'text-primary');
+        } else if (val !== undefined) {
+          cell.classList.remove('bg-surface-container-highest');
+          cell.classList.add('bg-surface-container-high', 'text-primary');
+        } else {
+          cell.classList.remove('bg-surface-container-highest', 'text-primary');
+          cell.classList.add('bg-surface-container-high', 'text-text-muted');
+        }
+      });
+
+      if (pinDigits.length === 8) {
+        const isValid = computeWpsChecksum(currentPin);
+        if (isValid) {
+          checksumStatus.className = 'flex items-center gap-space-xs text-status-success font-label-md text-code-sm';
+          checksumStatus.innerHTML = '<span class="material-symbols-outlined text-[15px]">check_circle</span><span>Valid 8-digit checksum (Luhn/WPS)</span>';
+          btnSubmit.disabled = false;
+          btnSubmit.classList.remove('opacity-50', 'pointer-events-none');
+        } else {
+          checksumStatus.className = 'flex items-center gap-space-xs text-status-warning font-label-md text-code-sm';
+          checksumStatus.innerHTML = '<span class="material-symbols-outlined text-[15px]">error_outline</span><span>Invalid WPS checksum (verify 8th digit)</span>';
+          btnSubmit.disabled = false;
+        }
+      } else {
+        checksumStatus.className = 'flex items-center gap-space-xs text-text-muted font-label-md text-code-sm';
+        checksumStatus.innerHTML = '<span class="material-symbols-outlined text-[15px]">pending</span><span>' + (8 - pinDigits.length) + ' digits remaining</span>';
+      }
+    }
+
+    // Keypad interaction
+    const keypad = document.getElementById('numeric-keypad');
+    if (keypad) {
+      keypad.addEventListener('click', (e) => {
+        const btn = e.target.closest('button[data-key]');
+        if (!btn) return;
+        const key = btn.getAttribute('data-key');
+
+        if (key === 'clear') {
+          pinDigits = [];
+        } else if (key === 'backspace') {
+          pinDigits.pop();
+        } else if (/^[0-9]$/.test(key)) {
+          if (pinDigits.length < 8) {
+            pinDigits.push(key);
+          }
+        }
+        renderPinState();
+      });
+    }
+
+    // Quick clear button
+    const btnQuickClear = document.getElementById('btn-quick-clear');
+    if (btnQuickClear) {
+      btnQuickClear.addEventListener('click', () => {
+        pinDigits = [];
+        renderPinState();
+      });
+    }
+
+    // Tab switching
+    if (tabPin && tabPbc && contentPin && contentPbc) {
+      tabPin.addEventListener('click', () => {
+        activeMethod = 'pin';
+        tabPin.classList.add('bg-surface-container-low', 'text-primary', 'shadow-sm', 'font-medium');
+        tabPin.classList.remove('text-on-surface-variant');
+        tabPin.setAttribute('aria-selected', 'true');
+
+        tabPbc.classList.remove('bg-surface-container-low', 'text-primary', 'shadow-sm', 'font-medium');
+        tabPbc.classList.add('text-on-surface-variant');
+        tabPbc.setAttribute('aria-selected', 'false');
+
+        contentPin.classList.remove('hidden');
+        contentPbc.classList.add('hidden');
+        submitBtnLabel.textContent = 'Connect with PIN';
+      });
+
+      tabPbc.addEventListener('click', () => {
+        activeMethod = 'pbc';
+        tabPbc.classList.add('bg-surface-container-low', 'text-primary', 'shadow-sm', 'font-medium');
+        tabPbc.classList.remove('text-on-surface-variant');
+        tabPbc.setAttribute('aria-selected', 'true');
+
+        tabPin.classList.remove('bg-surface-container-low', 'text-primary', 'shadow-sm', 'font-medium');
+        tabPin.classList.add('text-on-surface-variant');
+        tabPin.setAttribute('aria-selected', 'false');
+
+        contentPbc.classList.remove('hidden');
+        contentPin.classList.add('hidden');
+        submitBtnLabel.textContent = 'Start Push Button PBC';
+      });
+    }
+
+    // Action buttons micro-feedback
+    if (btnSubmit) {
+      btnSubmit.addEventListener('click', () => {
+        const prevText = submitBtnLabel.textContent;
+        submitBtnLabel.textContent = 'Initiating Supplicant...';
+        btnSubmit.classList.add('opacity-75');
+        setTimeout(() => {
+          submitBtnLabel.textContent = 'Associating M1 Handshake...';
+          setTimeout(() => {
+            submitBtnLabel.textContent = prevText;
+            btnSubmit.classList.remove('opacity-75');
+          }, 1400);
+        }, 800);
+      });
+    }
+
+    renderPinState();
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]" data-active-classes="[&amp;_.nav-pill]:bg-primary-container [&amp;_.nav-pill]:text-on-primary-container [&amp;_.nav-icon]:text-on-primary-container [&amp;_.nav-label]:text-on-surface [&amp;_.nav-label]:font-medium"><div class="flex items-center justify-around h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">radar</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors [&amp;_.nav-pill]:bg-primary-container [&amp;_.nav-pill]:text-on-primary-container [&amp;_.nav-icon]:text-on-primary-container [&amp;_.nav-label]:text-on-surface [&amp;_.nav-label]:font-medium" data-path="diagnostics" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">troubleshoot</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Diagnostics</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="logs" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">terminal</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Logs</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="nav-pill w-16 h-8 rounded-full flex items-center justify-center transition-all"><span class="nav-icon material-symbols-outlined text-[22px] transition-colors">settings</span></div><span class="nav-label font-label-md text-code-sm transition-colors">Settings</span></a></div></nav></body></html>
