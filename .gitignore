@@ -1,35 +1,69 @@
-# Gradle files
+# ==============================================================================
+# Built Products & Build System
+# ==============================================================================
 .gradle/
 build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
+app/build/
+*/build/
+bin/
+out/
 captures/
 .externalNativeBuild/
 .cxx/
-*.aab
-*.apk
 output-metadata.json
 
-# IntelliJ
-*.iml
+# Binary Packages
+*.apk
+*.aab
+*.aar
+
+# ==============================================================================
+# Local Environment & Secrets
+# ==============================================================================
+local.properties
+keystore.properties
+*.jks
+*.keystore
+*.key
+*.p12
+*.pem
+google-services.json
+
+# ==============================================================================
+# IDE & Editor Configurations
+# ==============================================================================
 .idea/
+*.iml
+.vscode/
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
 
-# Keystore files
-keystore.properties
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
+# ==============================================================================
+# Logs, Profiling & Crash Dumps
+# ==============================================================================
+*.log
 *.hprof
+hs_err_pid*
+replay_pid*
+
+# ==============================================================================
+# Temporary Tools, Python & Scratch Data
+# ==============================================================================
+tools/
+scratch/
+temp/
+tmp/
+*.tmp
+*.temp
+__pycache__/
+*.pyc
+*.pyo
+
+# ==============================================================================
+# OS Generated Files
+# ==============================================================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
