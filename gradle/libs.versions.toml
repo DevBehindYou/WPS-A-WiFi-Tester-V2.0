@@ -5,7 +5,7 @@ core = "6.0.0"
 hiltAndroid = "2.58"
 hiltNavigationCompose = "1.4.0"
 kotlin = "2.3.0"
-coreKtx = "1.19.0"
+coreKtx = "1.19.1"
 junit = "4.13.2"
 junitVersion = "1.3.0"
 espressoCore = "3.7.0"
@@ -20,7 +20,7 @@ coreSplashscreen = "1.2.0"
 materialIconsExtended = "1.7.8"
 mockitoCore = "5.23.0"
 mockitoKotlin = "6.3.0"
-navigationCompose = "2.10.1"
+navigationCompose = "2.10.2"
 
 [libraries]
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
